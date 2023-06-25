@@ -20,12 +20,6 @@
       class="flex h-full w-full cursor-not-allowed items-center justify-center gap-x-5 md:gap-x-10"
     >
       <slot>Button text</slot>
-      <img
-        src="../../icons/svgs/loading-icon.svg"
-        alt=""
-        class="block"
-        v-if="loading"
-      />
     </div>
   </button>
 </template>
@@ -39,6 +33,7 @@ defineProps({
     type: String as PropType<ButtonType>,
     validator: (value: ButtonType) =>
       !value || ['button', 'submit', 'reset'].includes(value),
+      
     default: 'button',
   },
   text: {
