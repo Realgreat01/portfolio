@@ -1,15 +1,20 @@
 <template>
   <div class="my-[10rem]">
-    <div class="flex flex-wrap gap-small">
+    <div
+      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50"
+    >
+      <ButtonComponent>Projects</ButtonComponent>
+    </div>
+    <div class="grid flex-wrap gap-small md:grid-cols-3">
       <div
-        class="min-h-[30rem] min-w-[30rem] rounded-lg bg-dark-800 p-small"
+        class="min-h-[30rem] w-full rounded-lg bg-dark-800 p-small"
         v-for="(project, index) in projects"
         :key="index"
       >
         <div class="flex w-full items-center justify-between text-medium-lite">
           <GlContainerImage class="text-brand" />
           <div class="flex gap-x-4">
-            <a :href="project.github" class="" v-if="!project.is_public">
+            <a :href="project.github" class="" v-if="project.is_public">
               <PhFillGithubLogo class="text-small" />
             </a>
             <a :href="project.website" class="">
@@ -35,29 +40,50 @@ import {
   FeExternalLink,
   PhFillGithubLogo,
 } from '@kalimahapps/vue-icons';
+
+import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 const projects = ref([
+  {
+    name: 'Divest',
+    website: 'https://www.usedivest.app',
+    description:
+      'Divest is a cryptocurrency conversion company based in Nigeria that helps you to effortlessly convert your cryptocurrencies into fiat and have it instantly credited to any bank account of your choice, I built the landing page',
+    is_public: false,
+  },
+  {
+    name: 'Home App',
+    website: '',
+    github: 'https://github.com/Realgreat01/crypto-dashboard',
+    description:
+      'I was contracted to build the Home App, A world class communication system for focused on immigrants giving them access to easily network and get familiar with their new found environment, I developed the backend of the application',
+    date: 'September, 2022',
+    is_public: false,
+  },
+  {
+    name: 'Swifia',
+    website: 'https://verix-exchange.vercel.app',
+    github: 'https://github.com/Realgreat01/crypto-dashboard',
+    description:
+      'I was on a contracted to create the web application for the Nigerian based Fintech that offers businesses and individuals access to global banking services, including virtual accounts in multiple currencies, global transfer services, and forex services. I designed the architecture and pattern for the entire application',
+    date: 'September, 2022',
+    is_public: false,
+  },
   {
     name: 'Crypto Dashboard',
     website: 'https://verix-exchange.vercel.app',
     github: 'https://github.com/Realgreat01/crypto-dashboard',
     description: 'A simple dashboard for a cryptocurrency exchange',
     date: 'September, 2022',
-    is_public: false,
-  },
-  {
-    name: 'Coded Event',
-    website: 'https://coded-events.vercel.app/',
-    github: 'https://github.com/Realgreat01/coded-events',
-    description: 'A landing page clone for an event scheduling company',
-    date: 'August, 2022',
+    is_public: true,
   },
   {
     name: 'Verix Shop',
     website: 'https://verix-shop.vercel.app',
     github: 'https://github.com/Realgreat01/verix-shop',
     description:
-      "A e-commerce website made with dummy data from fakestoreapi.com but it's completely fucntional. ",
+      "A e-commerce website made with dummy data from fakestoreapi.com but it's completely funtional. ",
     date: 'August, 2022',
+    is_public: true,
   },
   {
     name: 'Weather App',
@@ -66,6 +92,7 @@ const projects = ref([
     description:
       'A simple application for getting weather of any known city in the world at any given time.',
     date: 'July, 2022',
+    is_public: true,
   },
   {
     name: 'Movie App',
@@ -74,6 +101,7 @@ const projects = ref([
     description:
       "A simple app for checking available movies from IMDB website. It's my first Vue Application",
     date: 'June, 2022',
+    is_public: true,
   },
 
   {
@@ -83,6 +111,7 @@ const projects = ref([
     description:
       'Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies. A challenge by Frontend Mentor',
     date: 'June, 2022',
+    is_public: true,
   },
 ]);
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-screen flex-col justify-center">
     <h1 class="">
-      <span class="text-small text-brand-100">Hi I'm,</span>
+      <span class="text-small text-brand-100">Hi I'm</span>
       <span class="block text-medium font-bold text-brand-300 md:text-[7rem]">
         Samson Ikuomenisan
       </span>
@@ -20,12 +20,12 @@
 
     <div class="flex gap-x-thin text-small-lite">
       <div
-        class="h-medium w-[15rem] rounded-md bg-brand-800 px-small py-2 text-brand-50 hover:bg-brand-200 hover:text-brand-900 md:px-medium"
+        class="h-medium w-[15rem] rounded-md bg-brand-800 text-brand-50 hover:bg-brand-200 hover:text-brand-900"
       >
         <ButtonComponent>Resume</ButtonComponent>
       </div>
       <div
-        class="h-medium w-[15rem] rounded-md border border-brand-800 px-small py-2 text-brand-50 hover:border-brand hover:text-brand-300 md:px-medium"
+        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 hover:border-brand hover:text-brand-300"
       >
         <ButtonComponent>Hire&nbsp;Me</ButtonComponent>
       </div>

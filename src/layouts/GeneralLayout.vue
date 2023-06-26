@@ -1,16 +1,15 @@
 <template>
-  <div
-    class="flex h-screen w-full flex-col overflow-y-scroll bg-dark-900 text-white md:flex-row"
-  >
-    <HeaderComponent
-      class="sticky top-0 order-1 w-full md:bottom-0 md:order-3 md:w-[10%]"
-    />
-    <RouterView
-      class="order-2 h-fit flex-1 border border-x-gray-700 border-y-transparent px-small md:px-medium"
-    />
-    <FooterComponent
-      class="sticky bottom-0 order-3 w-full md:top-0 md:order-1 md:w-[10%]"
-    />
+  <div class="">
+    <MobileSidebar class="block md:hidden" />
+    <div
+      class="flex h-screen w-full flex-col overflow-y-scroll bg-dark-900 text-white md:flex-row"
+    >
+      <FooterComponent class="sticky bottom-0 top-0 hidden w-[10%] md:block" />
+      <RouterView
+        class="h-fit flex-1 border border-x-dark-500 border-y-transparent px-small md:px-medium"
+      />
+      <HeaderComponent class="sticky bottom-0 top-0 hidden w-[10%] md:flex" />
+    </div>
   </div>
 </template>
 
@@ -18,6 +17,7 @@
 import HeaderComponent from './HeaderComponent.vue';
 import { RouterView } from 'vue-router';
 import FooterComponent from './FooterComponent.vue';
+import MobileSidebar from './MobileSidebar.vue';
 </script>
 
 <style scoped></style>

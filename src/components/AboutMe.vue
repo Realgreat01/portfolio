@@ -1,5 +1,10 @@
 <template>
   <div class="" id="about">
+    <div
+      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50"
+    >
+      <ButtonComponent>About&nbsp;Me</ButtonComponent>
+    </div>
     <p class="text-normal-lite font-[300]">
       Ohayo! 👋🏾 My name is Anthony Akpan. I am a Frontend Engineer who loves
       building crazy ideas and trying out new things. I got into programming in
@@ -21,7 +26,7 @@
       />
     </div>
 
-    <div class="my-small flex w-full flex-wrap gap-thin">
+    <div class="my-small grid w-full grid-cols-4 flex-wrap gap-thin md:flex">
       <button
         v-for="(skill, index) in skills"
         :key="index"
@@ -61,6 +66,7 @@ import {
   DeGitlabOriginal,
   DeVscodeOriginal,
 } from '@kalimahapps/vue-icons';
+import PiniaIcon from './icons/PiniaIcon.vue';
 const skills = shallowRef([
   {
     skill: 'HTML5',
@@ -106,6 +112,11 @@ const skills = shallowRef([
     skill: 'Nuxt',
     level: 53,
     icon: DeNuxtjsOriginal,
+  },
+  {
+    skill: 'Pinia',
+    level: 53,
+    icon: PiniaIcon,
   },
 
   {

@@ -1,24 +1,33 @@
 <template>
-  <div class="flex flex-col gap-small md:gap-medium">
+  <div class="flex flex-col">
     <div
-      class="flex gap-small md:gap-medium"
+      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50"
+    >
+      <ButtonComponent>My&nbsp;Experience</ButtonComponent>
+    </div>
+    <div
+      class="grid min-h-[20rem] grid-cols-[1px,9fr] items-center gap-x-small md:gap-x-medium"
       v-for="(experience, index) in experiences"
       :key="index"
     >
-      <h1
-        class="flex h-small w-small items-center justify-center rounded-full bg-brand-50 text-brand-900"
+      <div
+        class="relative flex h-full w-[1px] items-center justify-center bg-brand-400"
       >
-        {{ index + 1 }}
-      </h1>
-      <div class="min-h-[20rem] w-full bg-dark-800 p-small">
-        <div class="flex w-full justify-between">
+        <h1
+          class="side-index absolute flex h-medium-lite w-medium-lite items-center justify-center rounded-full bg-dark-500 text-brand"
+        >
+          0{{ index + 1 }}
+        </h1>
+      </div>
+      <div class="my-small flex-1 bg-dark-800 p-small">
+        <div class="flex w-full flex-col justify-between md:flex-row">
           <h1 class="text-small-lite uppercase text-brand">
             {{ experience.role }}
           </h1>
           <h1 class="text-dark-300">{{ experience.duration }}</h1>
         </div>
 
-        <div class="flex gap-small">
+        <div class="flex flex-col gap-x-small md:flex-row">
           <h2
             class="text-brand-800"
             v-for="company in experience.company"
@@ -29,12 +38,12 @@
           <div
             class="flex w-full justify-between md:ml-auto md:w-fit md:justify-start md:gap-x-medium"
           >
-            <p class="">{{ experience.type }}</p>
-            <p class="">Remote</p>
+            <p class="text-brand">{{ experience.type }}</p>
+            <p class="text-brand-700">Remote</p>
           </div>
         </div>
 
-        <p class="">{{ experience.description }}</p>
+        <p class="text-dark-100">{{ experience.description }}</p>
       </div>
     </div>
   </div>
@@ -42,6 +51,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
+import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 const experiences = ref([
   {
     company: ['Home Incorporated'],
@@ -98,4 +109,4 @@ const experiences = ref([
 ]);
 </script>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
