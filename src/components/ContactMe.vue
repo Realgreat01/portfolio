@@ -3,18 +3,22 @@
     id="contact"
     class="my-[10rem] flex flex-col items-center gap-small text-center"
   >
-    <div
-      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:mr-auto"
-    >
-      <ButtonComponent>Contact&nbsp;Me</ButtonComponent>
+    <div class="mb-5 mr-auto flex items-center">
+      <div
+        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
+      >
+        <ButtonComponent>Contact&nbsp;Me</ButtonComponent>
+      </div>
+      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
+      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
-    <h1 class="text-small font-bold text-brand">Let's Connect !</h1>
+    <h1 class="text-medium-lite font-bold text-brand">Let's Connect !</h1>
     <p class="w-2/3 text-center text-dark-200">
       If you are interested in working with me on your next project, Kindly
       reach out and lets connect !
     </p>
     <div
-      class="h-medium w-[15rem] rounded-md bg-brand-800 text-brand-50 hover:bg-brand-200 hover:text-brand-900"
+      class="h-medium w-[15rem] rounded-md bg-brand-800 text-small text-brand-50 hover:bg-brand-200 hover:text-brand-900"
       @click="SendMail"
     >
       <ButtonComponent>Say Hi</ButtonComponent>
@@ -26,9 +30,12 @@
         v-for="(contact, index) in contactInformation"
         :key="index"
       >
-        <component :is="contact.icon" class="h-small-lite w-small-lite" />
+        <component
+          :is="contact.icon"
+          class="h-small-lite w-small-lite text-brand-600"
+        />
         <p
-          class="cursor-pointer pr-3 text-normal-lite text-brand-700"
+          class="cursor-pointer pr-3 text-normal-lite text-dark-100"
           @click="contact.action"
         >
           {{ contact.contact }}
@@ -48,7 +55,7 @@ const SendMail = () =>
 const contactInformation = shallowRef([
   {
     icon: FlMail,
-    contact: 'info@divest.com',
+    contact: 'samsonrealgreat@gmail.com',
     action: (): void => {
       window.location.href = 'mailto:' + 'samsonrealgreat@gmail.com';
     },

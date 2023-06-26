@@ -1,20 +1,35 @@
 <template>
   <div class="" id="about">
-    <div
-      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50"
-    >
-      <ButtonComponent>About&nbsp;Me</ButtonComponent>
+    <div class="mb-5 flex items-center">
+      <div
+        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
+      >
+        <ButtonComponent>About&nbsp;Me</ButtonComponent>
+      </div>
+      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
+      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
-    <p class="text-normal-lite font-[300]">
-      Ohayo! 👋🏾 My name is Anthony Akpan. I am a Frontend Engineer who loves
-      building crazy ideas and trying out new things. I got into programming in
-      2017 when I found a Python e-book and then switched from Python to Web
-      Development in 2018. Over the years, I have had the opportunity to work
-      with amazing companies and people, and on diverse projects. I recently
-      started a YouTube channel which is focused on documenting my Passion
-      Projects (open source projects I work on) and my journey in tech. When I
-      am not writing code, I am usually binging an anime/TV series. PS: I looove
-      One Piece. It's all you want in an anime (interesting and non-ending😂).
+    <p class="w-11/12 text-normal font-[300]">
+      Hey there! 👋🏾 I'm Samson Ikuomenisan, a passionate Fullstack Developer
+      specializing in frontend engineering. With a solid background in web
+      development, I thrive on crafting exceptional digital experiences and
+      leveraging cutting-edge technologies to build innovative solutions.
+      Simultaneously, I'm pursuing a degree in Dentistry and Dental Surgery,
+      blending my technical expertise with medical knowledge to approach
+      problem-solving with a multidisciplinary mindset.
+      <br />
+      <br />
+      Beyond coding and dentistry, I find immense joy in engaging in meaningful
+      conversations, connecting with people from diverse backgrounds, and
+      expanding my horizons through literature. By embracing a well-rounded set
+      of interests, including my love for reading, fostering human connections,
+      and advocating for positive change, I bring a diverse perspective and a
+      deep understanding to my work. I'm thrilled to collaborate on impactful
+      projects that utilize technology to make a tangible difference in people's
+      lives.
+      <br />
+      <br />
+      Let's join forces and create something truly amazing together!
     </p>
   </div>
   <div class="grid items-start justify-start pt-medium md:grid-cols-2">

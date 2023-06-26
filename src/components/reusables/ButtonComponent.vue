@@ -14,13 +14,7 @@
     >
       <slot>Button text</slot>
     </div>
-    <div
-      v-else
-      :class="loadingClass"
-      class="flex h-full w-full cursor-not-allowed items-center justify-center gap-x-5 md:gap-x-10"
-    >
-      <slot>Button text</slot>
-    </div>
+    
   </button>
 </template>
 

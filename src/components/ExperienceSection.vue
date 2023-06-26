@@ -1,9 +1,13 @@
 <template>
-  <div class="flex flex-col">
-    <div
-      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50"
-    >
-      <ButtonComponent>My&nbsp;Experience</ButtonComponent>
+  <div class="flex flex-col" id="experience">
+    <div class="mb-5 flex items-center">
+      <div
+        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
+      >
+        <ButtonComponent>My&nbsp;Experience</ButtonComponent>
+      </div>
+      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
+      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
     <div
       class="grid min-h-[20rem] grid-cols-[1px,9fr] items-center gap-x-small md:gap-x-medium"

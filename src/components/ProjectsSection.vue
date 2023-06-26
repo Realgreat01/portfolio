@@ -1,9 +1,13 @@
 <template>
-  <div class="my-[10rem]">
-    <div
-      class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50"
-    >
-      <ButtonComponent>Projects</ButtonComponent>
+  <div class="my-[10rem]" id="projects">
+    <div class="mb-5 flex items-center">
+      <div
+        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
+      >
+        <ButtonComponent>Projects</ButtonComponent>
+      </div>
+      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
+      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
     <div class="grid flex-wrap gap-small md:grid-cols-3">
       <div
