@@ -29,7 +29,7 @@
         <h1 class="text-small text-brand">
           {{ project.name }}
         </h1>
-        <h1 class="text-dark-300">
+        <h1 class="text-dark-100">
           {{ project.description }}
         </h1>
         <div class="mt-auto flex flex-wrap items-center gap-4 self-start">
@@ -74,12 +74,11 @@ const projects = ref<ProjectInterface[]>([
       'Express',
       'SocketIO',
       'MongoDB',
-      'JavaScript',
+      'Pinia',
       'VueJS',
-
+      'JavaScript',
       'TailwindCSS',
       'Swagger',
-      'Pinia',
     ],
     is_public: true,
   },
@@ -91,14 +90,12 @@ const projects = ref<ProjectInterface[]>([
     tools: [
       'NodeJS',
       'Express',
-
       'MongoDB',
       'JavaScript',
       'VueJS',
-
       'TailwindCSS',
-      'Swagger',
       'Pinia',
+      'Swagger',
     ],
     is_public: true,
   },
@@ -135,9 +132,9 @@ const projects = ref<ProjectInterface[]>([
     tools: [
       'VueJS',
       'Typescript',
-      'VueUse',
-      'VeeValidate',
       'Pinia',
+      'VueUse',
+      'Vee-Validate',
       'TailiwindCSS',
     ],
     is_public: false,

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col" id="experience">
-    <div class="mb-5 flex items-center">
+  <div class="flex mt-[10rem] flex-col" id="experience">
+    <div class="mb-[5rem] flex items-center">
       <div
         class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
       >
@@ -32,6 +32,7 @@
         </div>
 
         <div class="flex flex-col gap-x-small md:flex-row">
+        <div class="flex  gap-x-small flex-wrap">
           <h2
             class="text-brand-800"
             v-for="company in experience.company"
@@ -39,6 +40,7 @@
           >
             {{ company }}
           </h2>
+          </div>
           <div
             class="flex w-full justify-between md:ml-auto md:w-fit md:justify-start md:gap-x-medium"
           >
@@ -105,7 +107,7 @@ const experiences = ref([
   {
     role: 'Student Ambassador',
     type: 'Voluntary',
-    company: ['Flutterwave', 'MyStash Technologies', 'Trove Finance'],
+    company: ['Flutterwave',  'Trove Finance', 'MyStash Technologies',],
     duration: 'January 2021 - June 2022',
     description:
       'As an ambassador of some of the largest Tech companies in Nigeria, I assist in bringing new customers and also connect with like minded individuals and gained valuable industrial experience about Nigerian Fintechs',

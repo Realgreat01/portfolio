@@ -9,7 +9,7 @@
       <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
       <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
-    <p class="w-11/12 text-normal font-[300]">
+    <p class="w-full md:w-11/12 text-normal font-[300]">
       Hey there! 👋🏾 I'm Samson Ikuomenisan, a passionate Fullstack Developer
       specializing in frontend engineering. With a solid background in web
       development, I thrive on crafting exceptional digital experiences and

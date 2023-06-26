@@ -38,7 +38,18 @@
             {{ route.title }}
           </a>
         </div>
+        <div class="flex  items-center justify-center gap-medium md:flex-col">
+          <a
+            href=""
+            class="flex h-medium w-medium items-center justify-center rounded-full text-brand hover:bg-brand-50 hover:text-brand-900"
+            v-for="(link, index) in socialMediaLinks"
+            :key="index"
+          >
+            <component :is="link.icon" class="text-medium-lite"></component>
+          </a>
       </div>
+      </div>
+       
     </div>
   </div>
 </template>
@@ -46,7 +57,13 @@
 <script setup lang="ts">
 import LogoPlain from '@/components/icons/LogoIcon.vue';
 import { CgMenuRight, IcCancel } from '@kalimahapps/vue-icons';
-import { ref, watchEffect } from 'vue';
+import {
+  AkTwitterFill,
+  AkGithubFill,
+  AkLinkedInFill,
+  AkInstagramFill,
+} from '@kalimahapps/vue-icons';
+import { shallowRef , ref, watchEffect } from 'vue';
 
 const showModal = ref(false);
 const NavActions = ref([
@@ -55,7 +72,24 @@ const NavActions = ref([
   { title: 'Projects', route: '#projects' },
   { title: 'Contact', route: '#contact' },
 ]);
-
+const socialMediaLinks = shallowRef([
+  {
+    icon: AkGithubFill,
+    link: '',
+  },
+  {
+    icon: AkTwitterFill,
+    link: '',
+  },
+  {
+    icon: AkLinkedInFill,
+    link: '',
+  },
+  {
+    icon: AkInstagramFill,
+    link: '',
+  },
+]);
 watchEffect(() => {
   if (showModal.value === true) document.body.style.overflow = 'hidden';
   else document.body.style.overflow = 'auto';
