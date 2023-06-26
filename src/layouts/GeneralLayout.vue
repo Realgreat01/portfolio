@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="overflow-y-scroll">
     <MobileSidebar class="block md:hidden" />
     <div
       class="flex h-screen w-full flex-col overflow-y-scroll bg-dark-900 text-white md:flex-row"

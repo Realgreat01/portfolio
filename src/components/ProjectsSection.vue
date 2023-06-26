@@ -11,7 +11,7 @@
     </div>
     <div class="grid flex-wrap gap-small md:grid-cols-3">
       <div
-        class="min-h-[30rem] w-full rounded-lg bg-dark-800 p-small"
+        class="flex min-h-[30rem] w-full flex-col rounded-lg bg-dark-800 p-small"
         v-for="(project, index) in projects"
         :key="index"
       >
@@ -32,6 +32,15 @@
         <h1 class="text-dark-300">
           {{ project.description }}
         </h1>
+        <div class="mt-auto flex flex-wrap items-center gap-4 self-start">
+          <button
+            class="rounded-lg px-4 border border-dark  text-brand-700"
+            v-for="tool in project.tools"
+            :key="tool"
+          >
+            {{ tool }}
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -46,12 +55,59 @@ import {
 } from '@kalimahapps/vue-icons';
 
 import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
-const projects = ref([
+interface ProjectInterface {
+  name: string;
+  website: string;
+  github?: string;
+  description: string;
+  tools: string[];
+  is_public: boolean;
+}
+const projects = ref<ProjectInterface[]>([
   {
-    name: 'Divest',
-    website: 'https://www.usedivest.app',
+    name: 'Syntrix',
+    website: 'https://staging-buzz-chat.vercel.app',
     description:
       'Divest is a cryptocurrency conversion company based in Nigeria that helps you to effortlessly convert your cryptocurrencies into fiat and have it instantly credited to any bank account of your choice, I built the landing page',
+    tools: [
+      'NodeJS',
+      'Express',
+      'SocketIO',
+      'MongoDB',
+      'JavaScript',
+      'VueJS',
+
+      'TailwindCSS',
+      'Swagger',
+      'Pinia',
+    ],
+    is_public: true,
+  },
+  {
+    name: 'QuickHire',
+    website: 'https://staging-buzz-chat.vercel.app',
+    description:
+      'Divest is a cryptocurrency conversion company based in Nigeria that helps you to effortlessly convert your cryptocurrencies into fiat and have it instantly credited to any bank account of your choice, I built the landing page',
+    tools: [
+      'NodeJS',
+      'Express',
+
+      'MongoDB',
+      'JavaScript',
+      'VueJS',
+
+      'TailwindCSS',
+      'Swagger',
+      'Pinia',
+    ],
+    is_public: true,
+  },
+  {
+    name: 'Divest',
+    website: 'https://www.usedivest.com',
+    description:
+      'Divest is a cryptocurrency conversion company based in Nigeria that helps you to effortlessly convert your cryptocurrencies into fiat and have it instantly credited to any bank account of your choice, I built the landing page',
+    tools: ['VueJS', 'Typescript', 'TailwindCSS'],
     is_public: false,
   },
   {
@@ -60,7 +116,14 @@ const projects = ref([
     github: 'https://github.com/Realgreat01/crypto-dashboard',
     description:
       'I was contracted to build the Home App, A world class communication system for focused on immigrants giving them access to easily network and get familiar with their new found environment, I developed the backend of the application',
-    date: 'September, 2022',
+    tools: [
+      'NodeJS',
+      'Express',
+      'SocketIO',
+      'MongoDB',
+      'Typescript',
+      'Swagger',
+    ],
     is_public: false,
   },
   {
@@ -69,7 +132,14 @@ const projects = ref([
     github: 'https://github.com/Realgreat01/crypto-dashboard',
     description:
       'I was on a contracted to create the web application for the Nigerian based Fintech that offers businesses and individuals access to global banking services, including virtual accounts in multiple currencies, global transfer services, and forex services. I designed the architecture and pattern for the entire application',
-    date: 'September, 2022',
+    tools: [
+      'VueJS',
+      'Typescript',
+      'VueUse',
+      'VeeValidate',
+      'Pinia',
+      'TailiwindCSS',
+    ],
     is_public: false,
   },
   {
@@ -77,7 +147,7 @@ const projects = ref([
     website: 'https://verix-exchange.vercel.app',
     github: 'https://github.com/Realgreat01/crypto-dashboard',
     description: 'A simple dashboard for a cryptocurrency exchange',
-    date: 'September, 2022',
+    tools: ['VueJS', 'Javascript', 'TailwindCSS'],
     is_public: true,
   },
   {
@@ -86,7 +156,7 @@ const projects = ref([
     github: 'https://github.com/Realgreat01/verix-shop',
     description:
       "A e-commerce website made with dummy data from fakestoreapi.com but it's completely funtional. ",
-    date: 'August, 2022',
+    tools: ['VueJS', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
   {
@@ -95,7 +165,7 @@ const projects = ref([
     github: 'https://github.com/Realgreat01/weather-app',
     description:
       'A simple application for getting weather of any known city in the world at any given time.',
-    date: 'July, 2022',
+    tools: ['VueJS', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
   {
@@ -104,7 +174,7 @@ const projects = ref([
     github: 'https://github.com/Realgreat01/movie-app',
     description:
       "A simple app for checking available movies from IMDB website. It's my first Vue Application",
-    date: 'June, 2022',
+    tools: ['VueJS', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
 
@@ -114,7 +184,7 @@ const projects = ref([
     github: 'https://github.com/Realgreat01/static-job-listings-master',
     description:
       'Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies. A challenge by Frontend Mentor',
-    date: 'June, 2022',
+    tools: ['HTML', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
 ]);

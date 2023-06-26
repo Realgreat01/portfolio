@@ -73,6 +73,7 @@ import {
   DeNodejsOriginal,
   SiExpress,
   DeMongodbOriginal,
+  CoBrandSocketIo,
   VsFileTypeFirebase,
   DeFigmaOriginal,
   DeXdPlain,
@@ -145,6 +146,11 @@ const skills = shallowRef([
     icon: SiExpress,
   },
   {
+    skill: 'Socket IO',
+    level: 68.9,
+    icon: CoBrandSocketIo,
+  },
+  {
     skill: 'Mongo Db',
     level: 54.7,
     icon: DeMongodbOriginal,
@@ -161,11 +167,11 @@ const skills = shallowRef([
     icon: DeFigmaOriginal,
   },
 
-  {
-    skill: 'Adobe XD',
-    level: 62,
-    icon: DeXdPlain,
-  },
+  // {
+  //   skill: 'Adobe XD',
+  //   level: 62,
+  //   icon: DeXdPlain,
+  // },
   {
     skill: 'Git',
     level: 69,

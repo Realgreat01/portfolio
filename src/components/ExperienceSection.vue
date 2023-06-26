@@ -64,7 +64,7 @@ const experiences = ref([
     role: 'Backend Developer',
     duration: '2020 - Present',
     description:
-      'SDSN Youth is the global youth division of SDSN. SDSN Youth focused on training youths  ',
+      'A world class communication platform targetted at migrants to aid easy adaptation to new environment',
   },
   {
     company: ['Swifia Technology Limited'],

@@ -7,9 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding: 1rem;
-  scroll-snap-type: y proximity;
 }
 
 body {
@@ -22,6 +19,9 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+  scroll-snap-type: y proximity;
 }
 
 input[type='number'] {

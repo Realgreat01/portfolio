@@ -3,7 +3,9 @@
     id="contact"
     class="my-[10rem] flex flex-col items-center gap-small text-center"
   >
-    <div class="mb-5 mr-auto flex items-center">
+    <div class="mb-5 flex items-center">
+      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
+      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
       <div
         class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
       >
