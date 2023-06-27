@@ -1,14 +1,6 @@
 <template>
   <div class="flex flex-col md:mt-[10rem]" id="about">
-    <div class="mb-[5rem] flex items-center">
-      <div
-        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
-      >
-        <ButtonComponent>About</ButtonComponent>
-      </div>
-      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
-      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
-    </div>
+    <SectionTitle>About</SectionTitle>
     <p class="w-full text-normal font-[300] md:w-11/12">
       Hey there! 👋🏾 I'm Samson Ikuomenisan, a passionate Fullstack Developer
       with a solid background in web development. I thrive on crafting
@@ -83,118 +75,105 @@ import {
   DeVscodeOriginal,
 } from '@kalimahapps/vue-icons';
 import PiniaIcon from './icons/PiniaIcon.vue';
+import SectionTitle from './reusables/SectionTitle.vue';
+import AboutMe from '@/components/AboutMe.vue';
 const skills = shallowRef([
   {
-    skill: 'HTML5',
-    level: 98,
-    icon: DeHtml5Original,
-  },
-  {
-    skill: 'CSS3',
-    level: 88,
-    icon: DeCss3Original,
-  },
-  {
-    skill: 'Javascript',
-    level: 86,
-    icon: DeJavascriptOriginal,
-  },
-  {
-    skill: 'TailWind',
-    level: 70,
-    icon: DeTailwindcssPlain,
-  },
-  {
-    skill: 'Vue',
-    level: 60,
-    icon: DeVuejsOriginal,
-  },
-  {
-    skill: 'React',
-    level: 60,
-    icon: DeReactOriginal,
-  },
-  {
-    skill: 'Sass',
-    level: 80,
-    icon: DeSassOriginal,
-  },
-  {
     skill: 'Typescript',
-    level: 58,
     icon: DeTypescriptOriginal,
   },
   {
+    skill: 'Javascript',
+    icon: DeJavascriptOriginal,
+  },
+  {
+    skill: 'Vue',
+    icon: DeVuejsOriginal,
+  },
+  {
     skill: 'Nuxt',
-    level: 53,
     icon: DeNuxtjsOriginal,
   },
+  
   {
-    skill: 'Vuetify',
-    level: 53,
-    icon: DeVuetifyOriginal,
+    skill: 'TailWind',
+    icon: DeTailwindcssPlain,
   },
-  {
-    skill: 'Pinia',
-    level: 53,
-    icon: PiniaIcon,
-  },
-
   {
     skill: 'Node JS',
-    level: 67.4,
+    
     icon: DeNodejsOriginal,
   },
   {
     skill: 'Express JS',
-    level: 68.9,
+  
     icon: SiExpress,
   },
   {
     skill: 'Socket IO',
-    level: 68.9,
+  
     icon: CoBrandSocketIo,
   },
   {
     skill: 'Mongo Db',
-    level: 54.7,
+  
     icon: DeMongodbOriginal,
   },
   {
     skill: 'Firebase',
-    level: 40,
     icon: VsFileTypeFirebase,
   },
+  {
+    skill: 'React',
+    icon: DeReactOriginal,
+  },
+  {
+    skill: 'Sass',
+    icon: DeSassOriginal,
+  },
+  {
+    skill: 'Vuetify',
+    icon: DeVuetifyOriginal,
+  },
+  {
+    skill: 'Pinia',
+    icon: PiniaIcon,
+  },
 
+{
+    skill: 'HTML5',
+    icon: DeHtml5Original,
+  },
+  {
+    skill: 'CSS3',
+    icon: DeCss3Original,
+  },
   {
     skill: 'Figma',
-    level: 52,
     icon: DeFigmaOriginal,
   },
 
   // {
   //   skill: 'Adobe XD',
-  //   level: 62,
+  
   //   icon: DeXdPlain,
   // },
   {
     skill: 'Git',
-    level: 69,
     icon: DeGitOriginal,
   },
   {
     skill: 'Github',
-    level: 75.5,
+  
     icon: AkGithubFill,
   },
   // {
   //   skill: 'Gitlab',
-  //   level: 75.5,
+  //  ,
   //   icon: DeGitlabOriginal,
   // },
   {
     skill: 'VS code',
-    level: 84,
     icon: DeVscodeOriginal,
   },
 ]);

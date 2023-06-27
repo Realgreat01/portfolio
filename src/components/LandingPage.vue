@@ -1,13 +1,13 @@
 <template>
   <div class="flex h-screen flex-col justify-center" id="home">
     <h1 class="">
-      <span class="text-small text-brand-100">Hi I'm</span>
+      <span class="text-small text-brand-100">Hi, I'm</span>
       <span class="block text-medium font-bold text-brand-300 md:text-[7rem]">
         Samson Ikuomenisan
       </span>
     </h1>
     <h2
-      class="-mt-thin bg-gradient-to-r from-brand to-brand-900 bg-clip-text text-small font-black text-transparent"
+      class="-mt-thin bg-gradient-to-r from-brand-600 to-brand-900 bg-clip-text text-small font-black text-transparent"
     >
       Fullstack Developer
     </h2>
@@ -19,7 +19,7 @@
       to developing applications that are highly efficient and user-friendly.
     </p>
 
-    <div class="grid grid-cols-2 gap-x-thin text-small-lite md:w-2/3">
+    <div class="grid grid-cols-2 gap-x-thin text-small-lite md:w-1/2">
       <a
         href="/samson_ikuomenisan.pdf"
         download="samson ikuomenisan resume"

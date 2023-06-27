@@ -3,17 +3,7 @@
     id="contact"
     class="my-[10rem] flex flex-col items-center gap-small text-center"
   >
-    <div class="mb-5 flex items-center">
-      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
-      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
-      <div
-        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
-      >
-        <ButtonComponent>Contact&nbsp;Me</ButtonComponent>
-      </div>
-      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
-      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
-    </div>
+    <SectionTitle :has-both-ends="true">Contact&nbsp;Me</SectionTitle>
     <h1 class="text-medium-lite font-bold text-brand">Let's Connect !</h1>
     <p class="w-2/3 text-center text-dark-200">
       Let's connect and collaborate on your next project for a successful
@@ -51,6 +41,7 @@
 import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import { shallowRef } from 'vue';
 import { FlMail, ReWhatsappFill, BsPhone } from '@kalimahapps/vue-icons';
+import SectionTitle from './reusables/SectionTitle.vue';
 const SendMail = () =>
   (window.location.href = 'mailto:' + 'samsonrealgreat@gmail.com');
 

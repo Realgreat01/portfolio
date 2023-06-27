@@ -1,14 +1,6 @@
 <template>
   <div class="mt-[10rem] flex flex-col" id="projects">
-    <div class="mb-[5rem] flex items-center">
-      <div
-        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
-      >
-        <ButtonComponent>Projects</ButtonComponent>
-      </div>
-      <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
-      <div class="h-5 w-5 rounded-full bg-brand-800"></div>
-    </div>
+    <SectionTitle>Projects</SectionTitle>
     <div class="grid flex-wrap gap-small md:grid-cols-3">
       <div
         class="flex min-h-[30rem] w-full cursor-pointer flex-col rounded-lg bg-dark-800 p-small shadow-sm shadow-dark-700 hover:scale-[1.025] hover:bg-zinc-900"
@@ -18,12 +10,12 @@
         <div class="flex w-full items-center justify-between text-medium-lite">
           <BsBoxes class="text-brand" />
           <div class="flex gap-x-4">
-            <a :href="project.github" class="" v-if="project.is_public">
+            <a :href="project.github" class="" v-if="project.is_public" target="_blank">
               <PhFillGithubLogo
                 class="cursor-pointer text-small hover:scale-[1.2] hover:text-brand-400"
               />
             </a>
-            <a :href="project.website" class="">
+            <a :href="project.website" class="" target="_blank">
               <FeExternalLink
                 class="cursor-pointer text-small hover:scale-[1.2] hover:text-brand-400"
               />
@@ -59,6 +51,7 @@ import {
 } from '@kalimahapps/vue-icons';
 
 import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
+import SectionTitle from './reusables/SectionTitle.vue';
 interface ProjectInterface {
   name: string;
   website: string;
@@ -71,6 +64,7 @@ const projects = ref<ProjectInterface[]>([
   {
     name: 'Syntrix',
     website: 'https://staging-buzz-chat.vercel.app',
+    github: "https://github.com/Realgreat01/chat-application-frontend",
     description:
       'I built a fullstack social media application for people to easily connect online and get along with loved ones and also share their thoughts and feelings with the public.',
     tools: [
@@ -88,7 +82,8 @@ const projects = ref<ProjectInterface[]>([
   },
   {
     name: 'QuickHire',
-    website: 'https://quickhire.vercel.app',
+    website: 'https://bored-belt-colt.cyclic.app/api/docs/',
+    github: "https://github.com/Realgreat01/resume-builder-backend",
     description:
       'I built a fullstack application for developers to easily create portfolios and also apply for jobs in one click!',
     tools: [
@@ -108,13 +103,12 @@ const projects = ref<ProjectInterface[]>([
     website: 'https://www.usedivest.com',
     description:
       'I built the landing page for Divest which is a cryptocurrency conversion company based in Nigeria that helps you to effortlessly convert your cryptocurrencies into fiat and have it instantly credited to any bank account of your choice, ',
-    tools: ['VueJS', 'Typescript', 'TailwindCSS'],
+    tools: ['Vue', 'Typescript', 'TailwindCSS'],
     is_public: false,
   },
   {
     name: 'Home App',
-    website: '',
-    github: 'https://github.com/Realgreat01/crypto-dashboard',
+    website: 'https://home-app-api.onrender.com',
     description:
       'I built the entire backend for the Home App, A world class communication system for focused on immigrants giving them access to easily network and get familiar with their new found environment, I developed the backend of the application',
     tools: [
@@ -129,8 +123,7 @@ const projects = ref<ProjectInterface[]>([
   },
   {
     name: 'Swifia',
-    website: 'https://verix-exchange.vercel.app',
-    github: 'https://github.com/Realgreat01/crypto-dashboard',
+    website: 'https://www.swifia.com',
     description:
       'I built develop the web application and completed major integrations while also designing the entire architecture and pattern',
     tools: [
