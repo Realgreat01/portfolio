@@ -1,23 +1,44 @@
 <template>
-  <div class="flex flex-col justify-evenly">
-    <a
-      class="text-[1.6rem] text-white hover:font-bold hover:text-brand md:rotate-90"
-      v-for="(route, index) in NavActions"
-      :href="route.route"
-      :key="index"
-    >
-      {{ route.title }}
-    </a>
+  <div class="border border-none border-r-brand-50 bg-dark-900">
+    <div class="flex h-full items-center justify-center gap-medium md:flex-col">
+      <a
+        :href="link.link"
+        class="link flex h-medium w-medium items-center justify-center rounded-full text-brand hover:bg-brand-50 hover:text-brand-900"
+        v-for="(link, index) in socialMediaLinks"
+        :key="index"
+        target="_blank"
+      >
+        <component :is="link.icon" class="text-medium-lite"></component>
+      </a>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-const NavActions = ref([
-  { title: 'About', route: '#about' },
-  { title: 'Experience', route: '#experience' },
-  { title: 'Projects', route: '#projects' },
-  { title: 'Contact', route: '#contact' },
+import {
+  AkTwitterFill,
+  AkGithubFill,
+  AkLinkedInFill,
+  AkInstagramFill,
+} from '@kalimahapps/vue-icons';
+import { shallowRef } from 'vue';
+const socialMediaLinks = shallowRef([
+  {
+    icon: AkGithubFill,
+    link: 'https://github.com/Realgreat01',
+  },
+  {
+    icon: AkTwitterFill,
+    link: 'https://twitter.com/SRealgreat',
+  },
+  {
+    icon: AkLinkedInFill,
+    link: 'https://www.linkedin.com/in/samsonrealgreat/',
+  },
+  {
+    icon: AkInstagramFill,
+    link: 'https://www.instagram.com/srealgreat',
+  },
 ]);
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-[90vh] max-h-screen flex-col justify-center">
+  <div class="flex h-screen flex-col justify-center" id="home">
     <h1 class="">
       <span class="text-small text-brand-100">Hi I'm</span>
       <span class="block text-medium font-bold text-brand-300 md:text-[7rem]">
@@ -11,24 +11,28 @@
     >
       Fullstack Developer
     </h2>
-    <p class="my-medium font-thin md:w-2/3">
-      I'm a software engineer specialized in building Frontend and Backend
-      applications and sometimes design. I take pride in my work and ensure I
-      deliver the fastest, most accessible and most responsive application
-      possible.
+    <p class="my-medium font-thin md:w-4/5">
+      As a skilled software engineer, I specialize in building frontend and
+      backend applications. With a strong commitment to excellence, I prioritize
+      speed, accessibility, and responsiveness in the applications I deliver. I
+      approach my work with a strong sense of pride and an unwavering dedication
+      to developing applications that are highly efficient and user-friendly.
     </p>
 
-    <div class="flex gap-x-thin text-small-lite">
-      <div
-        class="h-medium w-[15rem] rounded-md bg-brand-800 text-brand-50 hover:bg-brand-200 hover:text-brand-900"
+    <div class="grid grid-cols-2 gap-x-thin text-small-lite md:w-2/3">
+      <a
+        href="/samson_ikuomenisan.pdf"
+        download="samson ikuomenisan resume"
+        class="h-medium rounded-md bg-brand-700 text-brand-50 hover:bg-brand-100 hover:text-dark-900"
       >
         <ButtonComponent>Resume</ButtonComponent>
-      </div>
-      <div
-        class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 hover:border-brand hover:text-brand-300"
+      </a>
+      <a
+        href="#contact"
+        class="h-medium rounded-md border border-brand-800 text-brand-50 hover:border-brand hover:text-brand-300"
       >
         <ButtonComponent>Hire&nbsp;Me</ButtonComponent>
-      </div>
+      </a>
     </div>
   </div>
 </template>

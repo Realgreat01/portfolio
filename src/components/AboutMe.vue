@@ -1,22 +1,21 @@
 <template>
-  <div class="" id="about">
-    <div class="mb-5 flex items-center">
+  <div class="flex flex-col md:mt-[10rem]" id="about">
+    <div class="mb-[5rem] flex items-center">
       <div
         class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
       >
-        <ButtonComponent>About&nbsp;Me</ButtonComponent>
+        <ButtonComponent>About</ButtonComponent>
       </div>
       <div class="h-[1px] w-[10rem] bg-brand-800 md:w-[20rem]"></div>
       <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
-    <p class="w-full md:w-11/12 text-normal font-[300]">
+    <p class="w-full text-normal font-[300] md:w-11/12">
       Hey there! 👋🏾 I'm Samson Ikuomenisan, a passionate Fullstack Developer
-      specializing in frontend engineering. With a solid background in web
-      development, I thrive on crafting exceptional digital experiences and
-      leveraging cutting-edge technologies to build innovative solutions.
-      Simultaneously, I'm pursuing a degree in Dentistry and Dental Surgery,
-      blending my technical expertise with medical knowledge to approach
-      problem-solving with a multidisciplinary mindset.
+      with a solid background in web development. I thrive on crafting
+      exceptional digital experiences and leveraging cutting-edge technologies
+      to build innovative solutions. Simultaneously, I'm pursuing a degree in
+      Dentistry and Dental Surgery, blending my technical expertise with medical
+      knowledge to approach problem-solving with a multidisciplinary mindset.
       <br />
       <br />
       Beyond coding and dentistry, I find immense joy in engaging in meaningful
@@ -59,7 +58,7 @@
 
 <script setup lang="ts">
 import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
-import { ref, shallowRef } from 'vue';
+import { shallowRef } from 'vue';
 import {
   DeHtml5Original,
   DeCss3Original,
@@ -75,8 +74,9 @@ import {
   DeMongodbOriginal,
   CoBrandSocketIo,
   VsFileTypeFirebase,
-  DeFigmaOriginal,
   DeXdPlain,
+  DeFigmaOriginal,
+  DeVuetifyOriginal,
   AkGithubFill,
   DeGitOriginal,
   DeGitlabOriginal,
@@ -128,6 +128,11 @@ const skills = shallowRef([
     skill: 'Nuxt',
     level: 53,
     icon: DeNuxtjsOriginal,
+  },
+  {
+    skill: 'Vuetify',
+    level: 53,
+    icon: DeVuetifyOriginal,
   },
   {
     skill: 'Pinia',
@@ -182,11 +187,11 @@ const skills = shallowRef([
     level: 75.5,
     icon: AkGithubFill,
   },
-  {
-    skill: 'Gitlab',
-    level: 75.5,
-    icon: DeGitlabOriginal,
-  },
+  // {
+  //   skill: 'Gitlab',
+  //   level: 75.5,
+  //   icon: DeGitlabOriginal,
+  // },
   {
     skill: 'VS code',
     level: 84,

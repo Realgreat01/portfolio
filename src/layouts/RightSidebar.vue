@@ -1,44 +1,35 @@
 <template>
-  <div class="border border-none border-r-brand-50 bg-dark-900">
-    <div class="flex h-full items-center justify-center gap-medium md:flex-col">
-      <a
-        href=""
-        class="flex h-medium w-medium items-center justify-center rounded-full text-brand hover:bg-brand-50 hover:text-brand-900"
-        v-for="(link, index) in socialMediaLinks"
-        :key="index"
-      >
-        <component :is="link.icon" class="text-medium-lite"></component>
-      </a>
-    </div>
+  <div class="flex flex-col justify-evenly">
+    <a
+      class="text-[1.6rem] hover:font-bold hover:text-brand md:rotate-90"
+      v-for="(route, index) in NavActions"
+      :href="`#${route.route}`"
+      :key="index"
+      :class="
+        route.route === activeId ? 'font-bold text-brand' : 'text-dark-200'
+      "
+      :style="
+        route.route === 'home' ? { display: 'none' } : { display: 'block' }
+      "
+    >
+      {{ route.title }}
+    </a>
   </div>
 </template>
 
 <script setup lang="ts">
-import {
-  AkTwitterFill,
-  AkGithubFill,
-  AkLinkedInFill,
-  AkInstagramFill,
-} from '@kalimahapps/vue-icons';
-import { shallowRef } from 'vue';
-const socialMediaLinks = shallowRef([
-  {
-    icon: AkGithubFill,
-    link: '',
-  },
-  {
-    icon: AkTwitterFill,
-    link: '',
-  },
-  {
-    icon: AkLinkedInFill,
-    link: '',
-  },
-  {
-    icon: AkInstagramFill,
-    link: '',
-  },
+import { computed, ref } from 'vue';
+import { useActive } from 'vue-use-active-scroll';
+const NavActions = ref([
+  { title: 'Home', route: 'home' },
+  { title: 'About', route: 'about' },
+  { title: 'Experience', route: 'experience' },
+  { title: 'Projects', route: 'projects' },
+  { title: 'Contact', route: 'contact' },
 ]);
+
+const targets = computed(() => NavActions.value.map(({ route }) => route));
+const { activeId } = useActive(targets);
 </script>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mt-[10rem] flex-col" id="experience">
+  <div class="mt-[10rem] flex flex-col" id="experience">
     <div class="mb-[5rem] flex items-center">
       <div
         class="h-medium w-[15rem] rounded-md border border-brand-800 text-brand-50 md:w-[30rem]"
@@ -10,7 +10,7 @@
       <div class="h-5 w-5 rounded-full bg-brand-800"></div>
     </div>
     <div
-      class="grid min-h-[20rem] grid-cols-[1px,9fr] items-center gap-x-small md:gap-x-medium"
+      class="grid grid-cols-[1px,9fr] items-center gap-x-small md:gap-x-medium"
       v-for="(experience, index) in experiences"
       :key="index"
     >
@@ -23,33 +23,33 @@
           0{{ index + 1 }}
         </h1>
       </div>
-      <div class="my-small flex-1 bg-dark-800 p-small">
+      <div class="my-small min-h-[20rem] flex-1 bg-dark-800 p-small">
         <div class="flex w-full flex-col justify-between md:flex-row">
-          <h1 class="text-small-lite uppercase text-brand">
+          <h1 class="text-small-lite uppercase text-brand-400">
             {{ experience.role }}
           </h1>
           <h1 class="text-dark-300">{{ experience.duration }}</h1>
         </div>
 
         <div class="flex flex-col gap-x-small md:flex-row">
-        <div class="flex  gap-x-small flex-wrap">
-          <h2
-            class="text-brand-800"
-            v-for="company in experience.company"
-            :key="index"
-          >
-            {{ company }}
-          </h2>
+          <div class="flex flex-wrap gap-x-small">
+            <h2
+              class="text-brand-600"
+              v-for="company in experience.company"
+              :key="index"
+            >
+              {{ company }}
+            </h2>
           </div>
           <div
             class="flex w-full justify-between md:ml-auto md:w-fit md:justify-start md:gap-x-medium"
           >
-            <p class="text-brand">{{ experience.type }}</p>
-            <p class="text-brand-700">Remote</p>
+            <p class="text-brand-700">{{ experience.type }}</p>
+            <p class="text-brand-500">Remote</p>
           </div>
         </div>
 
-        <p class="text-dark-100">{{ experience.description }}</p>
+        <p class="text-dark-100 md:w-4/5">{{ experience.description }}</p>
       </div>
     </div>
   </div>
@@ -64,36 +64,36 @@ const experiences = ref([
     company: ['Home Incorporated'],
     type: 'Freelance',
     role: 'Backend Developer',
-    duration: '2020 - Present',
+    duration: 'April 2023 - June 2023',
     description:
-      'A world class communication platform targetted at migrants to aid easy adaptation to new environment',
+      'A world-class communication platform, specifically targeted at new migrants, designed to facilitate easy access and promote adaptability in new environments. The company is dedicated to providing a seamless and intuitive user experience, allowing users to connect, communicate, and navigate their new surroundings effortlessly.',
   },
   {
     company: ['Swifia Technology Limited'],
     type: 'Freelance',
     role: 'Frontend Developer',
-    duration: '2020 - Present',
+    duration: 'April 2023 - June 2023',
     description:
-      'SDSN Youth is the global youth division of SDSN. SDSN Youth focused on training youths  ',
+      'Swifia is a financial services company that offers businesses and individuals access to global banking services, including virtual accounts in multiple currencies, global transfer services, and forex services.',
   },
   {
     company: ['Convexity CHATS'],
     type: 'Freelance',
     role: 'Frontend Developer',
-    duration: '2020 - 2022',
+    duration: 'August 2022 - November 2022',
     description:
-      'SDSN Youth is the global youth division of SDSN. SDSN Youth focused on training youths  ',
+      "Convexity CHATS is a company with a highly experienced team specializing in the Humanitarian and Financial sectors.We have created a specialized solution that addresses Africa's unique challenge of Cash Voucher Assistance (CVA) distribution by leveraging Ethereum Blockchain Programmable tokens.",
   },
   {
     company: [
       'United Nations Sustainable Development Solutions Network - Youth',
     ],
     role: 'Campus Coordinator',
-    duration: '2020 - 2022',
+    duration: 'August 2020 - December 2022',
     type: 'Voluntary',
     website: 'https://www.sdgstudents.org',
     description:
-      'SDSN Youth is the global youth division of SDSN. SDSN Youth focused on training youths  ',
+      'SDSN Youth is a global network of young professionals and students committed to sustainable development. With a focus on youth empowerment, innovation, and knowledge sharing, SDSN Youth actively engages young leaders in addressing pressing global challenges, such as poverty, climate change, and inequality.',
   },
   {
     company: ['United Nations Education and Cultural Organization'],
@@ -102,12 +102,12 @@ const experiences = ref([
     type: 'Voluntary',
     Website: 'https://www.sdgstudents.org',
     description:
-      'The SDG4Youth Network is the global youth division of UNESCO focused on harnessing youth voices in  Education. As a member, I contributed towards sustainable education',
+      "The SDG4Youth Network is a global platform initiated by UNESCO in partnership with the Office of the Secretary-General's Envoy on Youth, the Global Partnership for Education (GPE), Generation Unlimited, and other collaborators. It aims to empower youth and students to drive action towards achieving Sustainable Development Goal 4 (SDG 4) for Education.",
   },
   {
     role: 'Student Ambassador',
     type: 'Voluntary',
-    company: ['Flutterwave',  'Trove Finance', 'MyStash Technologies',],
+    company: ['Flutterwave', 'Trove Finance', 'MyStash Technologies'],
     duration: 'January 2021 - June 2022',
     description:
       'As an ambassador of some of the largest Tech companies in Nigeria, I assist in bringing new customers and also connect with like minded individuals and gained valuable industrial experience about Nigerian Fintechs',

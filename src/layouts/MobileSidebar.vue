@@ -1,18 +1,18 @@
 <template>
-  <div class="sticky top-0 z-[100] h-fit w-full bg-[#0D1912]">
+  <div class="fixed top-0 z-[100] h-fit w-full bg-dark-900">
     <div
       v-if="!showModal"
       class="z-50 flex h-[9.6rem] w-full items-center justify-between overflow-hidden px-thin py-small duration-[1500ms]"
     >
       <LogoPlain />
       <CgMenuRight
-        class="h-[5rem] w-[5rem] text-brand"
+        class="h-[4rem] w-[4rem] text-brand"
         @click="showModal = !showModal"
       />
     </div>
 
     <div
-      class="fixed top-0 z-[100] flex h-screen w-full justify-end overflow-hidden bg-[#0D1912] p-medium px-small"
+      class="fixed top-0 z-[100] flex h-screen w-full justify-end overflow-hidden bg-dark-900 px-thin"
       v-else
     >
       <div class="w-full overflow-x-hidden duration-500">
@@ -26,11 +26,11 @@
           />
         </div>
         <div
-          class="my-medium flex flex-col gap-y-small-lite text-small text-brand"
+          class="my-medium flex flex-col gap-y-small-lite px-thin text-small text-brand"
         >
           <a
             @click="showModal = false"
-            class="hover:font-bold hover:text-brand"
+            class="links hover:font-bold hover:text-brand"
             v-for="(route, index) in NavActions"
             :href="route.route"
             :key="index"
@@ -38,18 +38,18 @@
             {{ route.title }}
           </a>
         </div>
-        <div class="flex  items-center justify-center gap-medium md:flex-col">
+        <div class="flex items-center justify-center gap-medium md:flex-col">
           <a
-            href=""
+            :href="link.link"
             class="flex h-medium w-medium items-center justify-center rounded-full text-brand hover:bg-brand-50 hover:text-brand-900"
             v-for="(link, index) in socialMediaLinks"
             :key="index"
+            target="_blank"
           >
             <component :is="link.icon" class="text-medium-lite"></component>
           </a>
+        </div>
       </div>
-      </div>
-       
     </div>
   </div>
 </template>
@@ -63,7 +63,7 @@ import {
   AkLinkedInFill,
   AkInstagramFill,
 } from '@kalimahapps/vue-icons';
-import { shallowRef , ref, watchEffect } from 'vue';
+import { shallowRef, ref, watchEffect } from 'vue';
 
 const showModal = ref(false);
 const NavActions = ref([
@@ -75,19 +75,19 @@ const NavActions = ref([
 const socialMediaLinks = shallowRef([
   {
     icon: AkGithubFill,
-    link: '',
+    link: 'https://github.com/Realgreat01',
   },
   {
     icon: AkTwitterFill,
-    link: '',
+    link: 'https://twitter.com/SRealgreat',
   },
   {
     icon: AkLinkedInFill,
-    link: '',
+    link: 'https://www.linkedin.com/in/samsonrealgreat/',
   },
   {
     icon: AkInstagramFill,
-    link: '',
+    link: 'https://www.instagram.com/srealgreat/',
   },
 ]);
 watchEffect(() => {

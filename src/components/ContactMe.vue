@@ -16,14 +16,14 @@
     </div>
     <h1 class="text-medium-lite font-bold text-brand">Let's Connect !</h1>
     <p class="w-2/3 text-center text-dark-200">
-      If you are interested in working with me on your next project, Kindly
-      reach out and lets connect !
+      Let's connect and collaborate on your next project for a successful
+      partnership!
     </p>
     <div
       class="h-medium w-[15rem] rounded-md bg-brand-800 text-small text-brand-50 hover:bg-brand-200 hover:text-brand-900"
       @click="SendMail"
     >
-      <ButtonComponent>Say Hi</ButtonComponent>
+      <ButtonComponent>Say Hello!</ButtonComponent>
     </div>
 
     <div class="flex flex-wrap items-center justify-center">
