@@ -37,7 +37,7 @@
             class="flex w-full justify-between md:ml-auto md:w-fit md:justify-start md:gap-x-medium"
           >
             <p class="text-brand-700">{{ experience.type }}</p>
-            <p class="text-brand-500">Remote</p>
+            <p class="text-brand-600">Remote</p>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ const experiences = ref([
     role: 'Frontend Developer',
     duration: 'August 2022 - November 2022',
     description:
-      "Convexity CHATS is a company with a highly experienced team specializing in the Humanitarian and Financial sectors.We have created a specialized solution that addresses Africa's unique challenge of Cash Voucher Assistance (CVA) distribution by leveraging Ethereum Blockchain Programmable tokens.",
+      'Convexity CHATS is a company that possesses a team of highly experienced individuals who specialize in the Humanitarian and Financial sectors. They developed a specialized solution that tackles the distinct challenge of Cash Voucher Assistance (CVA) distribution in Africa by making use of Ethereum Blockchain Programmable tokens.',
   },
   {
     company: [
@@ -86,7 +86,7 @@ const experiences = ref([
     type: 'Voluntary',
     website: 'https://www.sdgstudents.org',
     description:
-      'SDSN Youth is a global network of young professionals and students committed to sustainable development. With a focus on youth empowerment, innovation, and knowledge sharing, SDSN Youth actively engages young leaders in addressing pressing global challenges, such as poverty, climate change, and inequality.',
+      'SDSN Youth stands as a global network that unites passionate young professionals and students in their unwavering commitment to sustainable development. With a key emphasis on fostering youth empowerment, promoting innovation, and facilitating knowledge exchange, SDSN Youth takes an active role in engaging and mobilizing young leaders to tackle pressing global challenges.',
   },
   {
     company: ['United Nations Education and Cultural Organization'],
@@ -95,7 +95,7 @@ const experiences = ref([
     type: 'Voluntary',
     Website: 'https://www.sdgstudents.org',
     description:
-      "The SDG4Youth Network is a global platform initiated by UNESCO in partnership with the Office of the Secretary-General's Envoy on Youth, the Global Partnership for Education (GPE), Generation Unlimited, and other collaborators. It aims to empower youth and students to drive action towards achieving Sustainable Development Goal 4 (SDG 4) for Education.",
+      "The SDG4Youth Network is a global platform that initiated by UNESCO in collaboration with the Office of the Secretary-General's Envoy on Youth, the Global Partnership for Education (GPE), Generation Unlimited, and other esteemed partners. Its primary objective is to empower young individuals and students, enabling them to spearhead initiatives and efforts aimed at attaining Sustainable Development Goal 4 (SDG 4) - ensuring quality education for all.",
   },
   {
     role: 'Student Ambassador',
@@ -103,7 +103,7 @@ const experiences = ref([
     company: ['Flutterwave', 'Trove Finance', 'MyStash Technologies'],
     duration: 'January 2021 - June 2022',
     description:
-      'As an ambassador of some of the largest Tech companies in Nigeria, I assist in bringing new customers and also connect with like minded individuals and gained valuable industrial experience about Nigerian Fintechs',
+      'As an ambassador for prominent Tech companies in Nigeria, they entrust me with the responsibility of attracting and acquiring new customers. Additionally, I actively engage with like-minded individuals, fostering connections and networking opportunities within the industry. Through my role, I have gained valuable experience and insights into the Nigerian Fintech sector, enhancing my understanding of its intricacies and advancements.',
   },
 ]);
 </script>

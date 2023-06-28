@@ -39,6 +39,7 @@
         class="flex w-[8rem] flex-col items-center justify-center gap-thin rounded-lg bg-dark-800 p-thin md:w-[10rem]"
       >
         <component
+          ref="skillIcons"
           :is="skill.icon"
           class="h-normal w-normal text-white md:h-small md:w-small"
         />
@@ -50,7 +51,7 @@
 
 <script setup lang="ts">
 import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
-import { shallowRef } from 'vue';
+import { shallowRef, ref } from 'vue';
 import {
   DeHtml5Original,
   DeCss3Original,
@@ -76,7 +77,13 @@ import {
 } from '@kalimahapps/vue-icons';
 import PiniaIcon from './icons/PiniaIcon.vue';
 import SectionTitle from './reusables/SectionTitle.vue';
-import AboutMe from '@/components/AboutMe.vue';
+import gsap from 'gsap';
+
+// const skillIcons = ref([])
+// const stagger = (el: HTMLElement) =>
+//   gsap.from(el, {
+//     y: -100,
+//   });
 const skills = shallowRef([
   {
     skill: 'Typescript',
@@ -94,29 +101,29 @@ const skills = shallowRef([
     skill: 'Nuxt',
     icon: DeNuxtjsOriginal,
   },
-  
+
   {
     skill: 'TailWind',
     icon: DeTailwindcssPlain,
   },
   {
     skill: 'Node JS',
-    
+
     icon: DeNodejsOriginal,
   },
   {
     skill: 'Express JS',
-  
+
     icon: SiExpress,
   },
   {
     skill: 'Socket IO',
-  
+
     icon: CoBrandSocketIo,
   },
   {
     skill: 'Mongo Db',
-  
+
     icon: DeMongodbOriginal,
   },
   {
@@ -140,7 +147,7 @@ const skills = shallowRef([
     icon: PiniaIcon,
   },
 
-{
+  {
     skill: 'HTML5',
     icon: DeHtml5Original,
   },
@@ -155,7 +162,7 @@ const skills = shallowRef([
 
   // {
   //   skill: 'Adobe XD',
-  
+
   //   icon: DeXdPlain,
   // },
   {
@@ -164,7 +171,7 @@ const skills = shallowRef([
   },
   {
     skill: 'Github',
-  
+
     icon: AkGithubFill,
   },
   // {

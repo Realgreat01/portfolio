@@ -14,9 +14,7 @@
     <p class="my-medium font-thin md:w-4/5">
       As a skilled software engineer, I specialize in building frontend and
       backend applications. With a strong commitment to excellence, I prioritize
-      speed, accessibility, and responsiveness in the applications I deliver. I
-      approach my work with a strong sense of pride and an unwavering dedication
-      to developing applications that are highly efficient and user-friendly.
+      speed, accessibility, and responsiveness in the applications I deliver.
     </p>
 
     <div class="grid grid-cols-2 gap-x-thin text-small-lite md:w-1/2">

@@ -5,7 +5,7 @@
   >
     <SectionTitle :has-both-ends="true">Contact&nbsp;Me</SectionTitle>
     <h1 class="text-medium-lite font-bold text-brand">Let's Connect !</h1>
-    <p class="w-2/3 text-center text-dark-200">
+    <p class="w-4/5 text-center text-dark-200">
       Let's connect and collaborate on your next project for a successful
       partnership!
     </p>

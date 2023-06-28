@@ -10,7 +10,12 @@
         <div class="flex w-full items-center justify-between text-medium-lite">
           <BsBoxes class="text-brand" />
           <div class="flex gap-x-4">
-            <a :href="project.github" class="" v-if="project.is_public" target="_blank">
+            <a
+              :href="project.github"
+              class=""
+              v-if="project.is_public"
+              target="_blank"
+            >
               <PhFillGithubLogo
                 class="cursor-pointer text-small hover:scale-[1.2] hover:text-brand-400"
               />
@@ -25,7 +30,7 @@
         <h1 class="my-thin text-small text-brand">
           {{ project.name }}
         </h1>
-        <h1 class="text-dark-100">
+        <h1 class="mb-4 text-dark-100">
           {{ project.description }}
         </h1>
         <div class="mt-auto flex flex-wrap items-center gap-4 self-start">
@@ -49,8 +54,6 @@ import {
   FeExternalLink,
   PhFillGithubLogo,
 } from '@kalimahapps/vue-icons';
-
-import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import SectionTitle from './reusables/SectionTitle.vue';
 interface ProjectInterface {
   name: string;
@@ -64,9 +67,9 @@ const projects = ref<ProjectInterface[]>([
   {
     name: 'Syntrix',
     website: 'https://staging-buzz-chat.vercel.app',
-    github: "https://github.com/Realgreat01/chat-application-frontend",
+    github: 'https://github.com/Realgreat01/chat-application-frontend',
     description:
-      'I built a fullstack social media application for people to easily connect online and get along with loved ones and also share their thoughts and feelings with the public.',
+      'I created a full-stack social media application that leverages various technologies and frameworks to enable users to establish effortless online connections. It provides a platform for individuals to cultivate relationships with their loved ones and openly share their thoughts and emotions with a broader audience.',
     tools: [
       'NodeJS',
       'Express',
@@ -83,9 +86,9 @@ const projects = ref<ProjectInterface[]>([
   {
     name: 'QuickHire',
     website: 'https://bored-belt-colt.cyclic.app/api/docs/',
-    github: "https://github.com/Realgreat01/resume-builder-backend",
+    github: 'https://github.com/Realgreat01/resume-builder-backend',
     description:
-      'I built a fullstack application for developers to easily create portfolios and also apply for jobs in one click!',
+      'I built a full-stack application that empowers developers to effortlessly create portfolios and apply for jobs with a single click. It streamlines the process by providing a user-friendly interface for showcasing skills, projects, and achievements, while simplifying job search and application.',
     tools: [
       'NodeJS',
       'Express',
@@ -102,7 +105,7 @@ const projects = ref<ProjectInterface[]>([
     name: 'Divest',
     website: 'https://www.usedivest.com',
     description:
-      'I built the landing page for Divest which is a cryptocurrency conversion company based in Nigeria that helps you to effortlessly convert your cryptocurrencies into fiat and have it instantly credited to any bank account of your choice, ',
+      'I built the landing page for Divest, a cryptocurrency conversion company based in Nigeria. The company assists you in effortlessly converting your cryptocurrencies into fiat currency and instantly crediting it to any bank account of your choice.',
     tools: ['Vue', 'Typescript', 'TailwindCSS'],
     is_public: false,
   },
@@ -110,7 +113,7 @@ const projects = ref<ProjectInterface[]>([
     name: 'Home App',
     website: 'https://home-app-api.onrender.com',
     description:
-      'I built the entire backend for the Home App, A world class communication system for focused on immigrants giving them access to easily network and get familiar with their new found environment, I developed the backend of the application',
+      'I developed the backend for the Home App, a social communication platform designed to support migrants. It fosters networking, familiarization, and community connections, empowering migrants in their integration journey.',
     tools: [
       'NodeJS',
       'Express',
@@ -125,7 +128,7 @@ const projects = ref<ProjectInterface[]>([
     name: 'Swifia',
     website: 'https://www.swifia.com',
     description:
-      'I built develop the web application and completed major integrations while also designing the entire architecture and pattern',
+      'I spearheaded the development of the frontend for the web application, taking charge of designing the architecture, establishing development patterns, and leading the team. Additionally, I successfully completed significant integrations, ensuring seamless functionality and an exceptional user experience.',
     tools: [
       'Vue',
       'Typescript',
@@ -141,7 +144,7 @@ const projects = ref<ProjectInterface[]>([
     website: 'https://verix-exchange.vercel.app',
     github: 'https://github.com/Realgreat01/crypto-dashboard',
     description:
-      'A simple dashboard for a cryptocurrency exchange of a design I saw on figma',
+      'I created a sleek dashboard for a cryptocurrency exchange based on a captivating design from Figma. It offers a user-friendly interface for monitoring assets and making trades',
     tools: ['Vue', 'Javascript', 'TailwindCSS', 'Chart JS'],
     is_public: true,
   },
@@ -150,7 +153,7 @@ const projects = ref<ProjectInterface[]>([
     website: 'https://verix-shop.vercel.app',
     github: 'https://github.com/Realgreat01/verix-shop',
     description:
-      "A e-commerce website made with dummy data from fakestoreapi.com but it's completely funtional. I developed the design",
+      'I designed and developed a fully functional e-commerce website using dummy data from fakestoreapi.com. It offers an immersive shopping experience with a captivating design.',
     tools: ['Vue', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
@@ -159,7 +162,7 @@ const projects = ref<ProjectInterface[]>([
     website: 'https://verix-weather.vercel.app/',
     github: 'https://github.com/Realgreat01/weather-app',
     description:
-      'A simple application for getting weather of any known city in the world at any given time.',
+      'I created a straightforward application that provides real-time weather information for any city worldwide. Users can easily access the current weather conditions for their desired location, offering convenience and up-to-date weather updates at their fingertips.',
     tools: ['Vue', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
@@ -168,7 +171,7 @@ const projects = ref<ProjectInterface[]>([
     website: 'https://verix-movie.vercel.app/',
     github: 'https://github.com/Realgreat01/movie-app',
     description:
-      "A simple app for checking available movies from IMDB website. It's my first Vue Application",
+      'I built my first Vue application—a simple app to check available movies from the IMDB website. Users can easily browse and explore a wide range of films with this user-friendly app.',
     tools: ['Vue', 'Javascript', 'APIs', 'SCSS'],
     is_public: true,
   },
@@ -178,8 +181,8 @@ const projects = ref<ProjectInterface[]>([
     website: 'https://static-job.vercel.app/',
     github: 'https://github.com/Realgreat01/static-job-listings-master',
     description:
-      'Learnt how to work with data using this App. I get data from a file and used it to build a front-end application that filters jobs posted based on companies. A challenge by Frontend Mentor',
-    tools: ['HTML', 'Javascript', 'APIs', 'SCSS'],
+      'I learned data handling by building a front-end application that filters job postings based on companies. This project was a challenge by Frontend Mentor and helped enhance my skills in working with data effectively.',
+    tools: ['HTML', 'Javascript', 'JSON', 'SCSS'],
     is_public: true,
   },
 ]);
