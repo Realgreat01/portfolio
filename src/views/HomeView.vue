@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <LandingPage />
     <AboutMe />
     <ExperienceSection />
@@ -14,8 +14,6 @@ import ContactMe from '@/components/ContactMe.vue';
 import ExperienceSection from '@/components/ExperienceSection.vue';
 import LandingPage from '@/components/LandingPage.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue';
-import { ref } from 'vue';
-import { vIntersectionObserver } from '@vueuse/components';
 import { AppStore } from '@/stores/app-state';
 const store = AppStore();
 </script>

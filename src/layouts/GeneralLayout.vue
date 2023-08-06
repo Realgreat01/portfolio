@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="w-full">
     <MobileSidebar class="block md:hidden" />
     <div class="flex w-full flex-col bg-dark-900 text-white md:flex-row">
       <LeftSidebar

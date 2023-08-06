@@ -54,10 +54,10 @@ import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import SectionTitle from './reusables/SectionTitle.vue';
 const experiences = ref([
   {
-    company: ['Home Incorporated'],
+    company: ['Home4IM Incorporated'],
     type: 'Freelance',
     role: 'Backend Developer',
-    duration: 'April 2023 - June 2023',
+    duration: 'May 2023 - July 2023',
     description:
       'A world-class communication platform, specifically targeted at new migrants, designed to facilitate easy access and promote adaptability in new environments. The company is dedicated to providing a seamless and intuitive user experience, allowing users to connect, communicate, and navigate their new surroundings effortlessly.',
   },
@@ -65,7 +65,7 @@ const experiences = ref([
     company: ['Swifia Technology Limited'],
     type: 'Freelance',
     role: 'Frontend Developer',
-    duration: 'April 2023 - June 2023',
+    duration: 'March 2023 - May 2023',
     description:
       'Swifia is a financial services company that offers businesses and individuals access to global banking services, including virtual accounts in multiple currencies, global transfer services, and forex services.',
   },
@@ -76,6 +76,14 @@ const experiences = ref([
     duration: 'August 2022 - November 2022',
     description:
       'Convexity CHATS is a company that possesses a team of highly experienced individuals who specialize in the Humanitarian and Financial sectors. They developed a specialized solution that tackles the distinct challenge of Cash Voucher Assistance (CVA) distribution in Africa by making use of Ethereum Blockchain Programmable tokens.',
+  },
+  {
+    company: ['Google Africa Developers Scholarship Program'],
+    type: 'Bootcamp',
+    role: 'Frontend Developement Bootcamp',
+    duration: 'November 2020 - May 2021',
+    description:
+      'As a participant in the Google Africa Developers Scholarship Program, I specialized in Front-End Development (FE). The program empowered African developers through comprehensive learning in web and mobile development, focusing on HTML, CSS, JavaScript, and other front-end technologies. With the support of industry experts and mentors, I gained confidence and valuable skills to pursue a successful career in the tech industry.',
   },
   {
     company: [

@@ -31,7 +31,6 @@
         class="block w-full"
       />
     </div>
-
     <div class="my-small grid w-full grid-cols-4 flex-wrap gap-thin md:flex">
       <button
         v-for="(skill, index) in skills"
@@ -41,7 +40,8 @@
         <component
           ref="skillIcons"
           :is="skill.icon"
-          class="h-normal w-normal text-white md:h-small md:w-small"
+          :class="skill.skill === 'Laravel' ? 'text-red-600' : 'text-white'"
+          class="h-normal w-normal md:h-small md:w-small"
         />
         <p class="text-thin text-dark-300">{{ skill.skill }}</p>
       </button>
@@ -50,7 +50,6 @@
 </template>
 
 <script setup lang="ts">
-import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import { shallowRef, ref } from 'vue';
 import {
   DeHtml5Original,
@@ -68,6 +67,8 @@ import {
   CoBrandSocketIo,
   VsFileTypeFirebase,
   DeXdPlain,
+  DePhpOriginal,
+  SiLaravel,
   DeFigmaOriginal,
   DeVuetifyOriginal,
   AkGithubFill,
@@ -135,12 +136,20 @@ const skills = shallowRef([
     icon: DeReactOriginal,
   },
   {
-    skill: 'Sass',
+    skill: 'SCSS',
     icon: DeSassOriginal,
   },
   {
     skill: 'Vuetify',
     icon: DeVuetifyOriginal,
+  },
+  {
+    skill: 'PHP',
+    icon: DePhpOriginal,
+  },
+  {
+    skill: 'Laravel',
+    icon: SiLaravel,
   },
   {
     skill: 'Pinia',
@@ -160,11 +169,11 @@ const skills = shallowRef([
     icon: DeFigmaOriginal,
   },
 
-  // {
-  //   skill: 'Adobe XD',
+  {
+    skill: 'Adobe XD',
 
-  //   icon: DeXdPlain,
-  // },
+    icon: DeXdPlain,
+  },
   {
     skill: 'Git',
     icon: DeGitOriginal,
@@ -174,11 +183,11 @@ const skills = shallowRef([
 
     icon: AkGithubFill,
   },
-  // {
-  //   skill: 'Gitlab',
-  //  ,
-  //   icon: DeGitlabOriginal,
-  // },
+  {
+    skill: 'Gitlab',
+
+    icon: DeGitlabOriginal,
+  },
   {
     skill: 'VS code',
     icon: DeVscodeOriginal,

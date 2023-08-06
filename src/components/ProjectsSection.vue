@@ -110,6 +110,15 @@ const projects = ref<ProjectInterface[]>([
     is_public: false,
   },
   {
+    name: 'My Portfolio',
+    website: 'https://realgreat.vercel.app',
+    github: 'https://github.com/Realgreat01/portfolio',
+    description:
+      'I built my own portfolio to showcase my expertise in web development, emphasizing my skills in creating interactive and visually appealing user interfaces. It displays my frontend technologies proficiency, design principles, and user experience capabilities, along with previous projects and accomplishments.',
+    tools: ['Vue', 'TypeScript', 'TailwindCSS'],
+    is_public: true,
+  },
+  {
     name: 'Home App',
     website: 'https://home-app-api.onrender.com',
     description:
@@ -121,6 +130,7 @@ const projects = ref<ProjectInterface[]>([
       'MongoDB',
       'Typescript',
       'Swagger',
+      'Cron',
     ],
     is_public: false,
   },
