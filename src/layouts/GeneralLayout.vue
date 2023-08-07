@@ -6,7 +6,7 @@
         class="sticky bottom-0 top-0 hidden h-screen w-[10%] md:block"
       />
       <RouterView
-        class="h-fit w-full flex-1 border border-x-dark-500 border-y-transparent px-small md:w-max md:px-medium"
+        class="h-fit w-full flex-1 border border-x-dark-500 border-y-transparent px-small md:px-medium"
       />
       <RightSidebar
         class="sticky bottom-0 top-0 hidden h-screen w-[10%] md:flex"

@@ -143,14 +143,14 @@ const skills = shallowRef([
     skill: 'Vuetify',
     icon: DeVuetifyOriginal,
   },
-  {
-    skill: 'PHP',
-    icon: DePhpOriginal,
-  },
-  {
-    skill: 'Laravel',
-    icon: SiLaravel,
-  },
+  // {
+  //   skill: 'PHP',
+  //   icon: DePhpOriginal,
+  // },
+  // {
+  //   skill: 'Laravel',
+  //   icon: SiLaravel,
+  // },
   {
     skill: 'Pinia',
     icon: PiniaIcon,
@@ -169,11 +169,11 @@ const skills = shallowRef([
     icon: DeFigmaOriginal,
   },
 
-  {
-    skill: 'Adobe XD',
+  // {
+  //   skill: 'Adobe XD',
 
-    icon: DeXdPlain,
-  },
+  //   icon: DeXdPlain,
+  // },
   {
     skill: 'Git',
     icon: DeGitOriginal,
@@ -188,10 +188,10 @@ const skills = shallowRef([
 
     icon: DeGitlabOriginal,
   },
-  {
-    skill: 'VS code',
-    icon: DeVscodeOriginal,
-  },
+  // {
+  //   skill: 'VS code',
+  //   icon: DeVscodeOriginal,
+  // },
 ]);
 </script>
 
