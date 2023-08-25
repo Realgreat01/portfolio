@@ -19,7 +19,7 @@
 
     <div class="grid grid-cols-2 gap-x-thin text-small-lite md:w-1/2">
       <a
-        href="/samson_ikuomenisan_FE.pdf"
+        href="/SAMSON_IKUOMENISAN_FULLSTACK_DEVELOPER.pdf"
         download="samson ikuomenisan resume"
         class="h-medium rounded-md bg-brand-700 text-brand-50 hover:bg-brand-100 hover:text-dark-900"
       >
