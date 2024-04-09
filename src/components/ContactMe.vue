@@ -54,6 +54,7 @@ const contactInformation = shallowRef([
       window.location.href = 'mailto:' + 'samson.ikuomenisan@gmail.com';
     },
   },
+
   {
     icon: BsPhone,
     contact: '+234 706 221 5229',
