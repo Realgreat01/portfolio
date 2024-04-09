@@ -77,6 +77,7 @@ import {
   DeVscodeOriginal,
 } from '@kalimahapps/vue-icons';
 import PiniaIcon from './icons/PiniaIcon.vue';
+
 import SectionTitle from './reusables/SectionTitle.vue';
 import gsap from 'gsap';
 

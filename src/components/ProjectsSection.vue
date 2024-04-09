@@ -85,7 +85,7 @@ const projects = ref<ProjectInterface[]>([
   },
   {
     name: 'QuickHire',
-    website: 'https://bored-belt-colt.cyclic.app/api/docs/',
+    website: 'https://quickhire.vercel.app',
     github: 'https://github.com/Realgreat01/resume-builder-backend',
     description:
       'I built a full-stack application that empowers developers to effortlessly create portfolios and apply for jobs with a single click. It streamlines the process by providing a user-friendly interface for showcasing skills, projects, and achievements, while simplifying job search and application.',
@@ -101,14 +101,14 @@ const projects = ref<ProjectInterface[]>([
     ],
     is_public: true,
   },
-  {
-    name: 'Divest',
-    website: 'https://www.usedivest.com',
-    description:
-      'I built the landing page for Divest, a cryptocurrency conversion company based in Nigeria. The company assists you in effortlessly converting your cryptocurrencies into fiat currency and instantly crediting it to any bank account of your choice.',
-    tools: ['Vue', 'Typescript', 'TailwindCSS'],
-    is_public: false,
-  },
+  // {
+  //   name: 'Divest',
+  //   website: 'https://www.usedivest.com',
+  //   description:
+  //     'I built the landing page for Divest, a cryptocurrency conversion company based in Nigeria. The company assists you in effortlessly converting your cryptocurrencies into fiat currency and instantly crediting it to any bank account of your choice.',
+  //   tools: ['Vue', 'Typescript', 'TailwindCSS'],
+  //   is_public: false,
+  // },
   {
     name: 'My Portfolio',
     website: 'https://realgreat.vercel.app',
@@ -118,22 +118,22 @@ const projects = ref<ProjectInterface[]>([
     tools: ['Vue', 'TypeScript', 'TailwindCSS'],
     is_public: true,
   },
-  {
-    name: 'Home App',
-    website: 'https://home-app-api.onrender.com',
-    description:
-      'I developed the backend for the Home App, a social communication platform designed to support migrants. It fosters networking, familiarization, and community connections, empowering migrants in their integration journey.',
-    tools: [
-      'NodeJS',
-      'Express',
-      'SocketIO',
-      'MongoDB',
-      'Typescript',
-      'Swagger',
-      'Cron',
-    ],
-    is_public: false,
-  },
+  // {
+  //   name: 'Home App',
+  //   website: 'https://home.onrender.com',
+  //   description:
+  //     'I developed the backend for the Home App, a social communication platform designed to support migrants. It fosters networking, familiarization, and community connections, empowering migrants in their integration journey.',
+  //   tools: [
+  //     'NodeJS',
+  //     'Express',
+  //     'SocketIO',
+  //     'MongoDB',
+  //     'Typescript',
+  //     'Swagger',
+  //     'Cron',
+  //   ],
+  //   is_public: false,
+  // },
   {
     name: 'Swifia',
     website: 'https://www.swifia.com',

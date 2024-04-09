@@ -21,15 +21,17 @@ import {
   AkLinkedInFill,
   AkInstagramFill,
 } from '@kalimahapps/vue-icons';
+import XIcon from '../components/icons/XIcon.vue';
 import { shallowRef } from 'vue';
+
 const socialMediaLinks = shallowRef([
   {
     icon: AkGithubFill,
     link: 'https://github.com/Realgreat01',
   },
   {
-    icon: AkTwitterFill,
-    link: 'https://twitter.com/SRealgreat',
+    icon: XIcon,
+    link: 'https://x.com/SRealgreat',
   },
   {
     icon: AkLinkedInFill,

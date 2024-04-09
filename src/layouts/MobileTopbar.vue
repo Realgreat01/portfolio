@@ -63,6 +63,7 @@ import {
   AkLinkedInFill,
   AkInstagramFill,
 } from '@kalimahapps/vue-icons';
+import XIcon from '../components/icons/XIcon.vue';
 import { shallowRef, ref, watchEffect } from 'vue';
 
 const showModal = ref(false);
@@ -78,8 +79,8 @@ const socialMediaLinks = shallowRef([
     link: 'https://github.com/Realgreat01',
   },
   {
-    icon: AkTwitterFill,
-    link: 'https://twitter.com/SRealgreat',
+    icon: XIcon,
+    link: 'https://x.com/SRealgreat',
   },
   {
     icon: AkLinkedInFill,

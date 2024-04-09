@@ -42,15 +42,16 @@ import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import { shallowRef } from 'vue';
 import { FlMail, ReWhatsappFill, BsPhone } from '@kalimahapps/vue-icons';
 import SectionTitle from './reusables/SectionTitle.vue';
+
 const SendMail = () =>
-  (window.location.href = 'mailto:' + 'samsonrealgreat@gmail.com');
+  (window.location.href = 'mailto:' + 'samson.ikuomenisan@gmail.com');
 
 const contactInformation = shallowRef([
   {
     icon: FlMail,
-    contact: 'samsonrealgreat@gmail.com',
+    contact: 'samson.ikuomenisan@gmail.com',
     action: (): void => {
-      window.location.href = 'mailto:' + 'samsonrealgreat@gmail.com';
+      window.location.href = 'mailto:' + 'samson.ikuomenisan@gmail.com';
     },
   },
   {
