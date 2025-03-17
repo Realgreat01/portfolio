@@ -5,6 +5,10 @@
       v-for="(route, index) in NavActions"
       :href="`#${route.route}`"
       :key="index"
+      v-motion-fade-visible
+      :delay="1000 + 100 * index"
+      :duration="1000"
+      style="transform: rotate(90deg)"
       :class="
         route.route === activeId ? 'font-bold text-brand' : 'text-dark-200'
       "

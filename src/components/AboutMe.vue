@@ -1,30 +1,46 @@
 <template>
-  <div class="flex flex-col md:mt-[10rem]" id="about">
+  <div
+    class="flex flex-col md:mt-[10rem]"
+    id="about"
+    v-motion-fade-visible
+    :delay="500"
+    :duration="1500"
+  >
     <SectionTitle>About</SectionTitle>
-    <p class="w-full text-normal font-[300] md:w-11/12">
-      Hey there! 👋🏾 I'm Samson Ikuomenisan, a passionate Fullstack Developer
-      with a solid background in web development. I thrive on crafting
-      exceptional digital experiences and leveraging cutting-edge technologies
-      to build innovative solutions. Simultaneously, I'm pursuing a degree in
-      Dentistry and Dental Surgery, blending my technical expertise with medical
-      knowledge to approach problem-solving with a multidisciplinary mindset.
+    <p class="w-full text-normal font-light md:w-11/12">
+      <span class="" v-motion-fade-visible :delay="500" :duration="1500">
+        Hey there! 👋🏾 I'm Samson Ikuomenisan, a passionate Fullstack Developer
+        with a solid background in web development. I thrive on crafting
+        exceptional digital experiences and leveraging cutting-edge technologies
+        to build innovative solutions. Simultaneously, I'm pursuing a degree in
+        Dentistry and Dental Surgery, blending my technical expertise with
+        medical knowledge to approach problem-solving with a multidisciplinary
+        mindset.
+      </span>
       <br />
       <br />
-      Beyond coding and dentistry, I find immense joy in engaging in meaningful
-      conversations, connecting with people from diverse backgrounds, and
-      expanding my horizons through literature. By embracing a well-rounded set
-      of interests, including my love for reading, fostering human connections,
-      and advocating for positive change, I bring a diverse perspective and a
-      deep understanding to my work. I'm thrilled to collaborate on impactful
-      projects that utilize technology to make a tangible difference in people's
-      lives.
+      <span class="" v-motion-fade-visible :delay="500" :duration="1500">
+        Beyond coding and dentistry, I find immense joy in engaging in
+        meaningful conversations, connecting with people from diverse
+        backgrounds, and expanding my horizons through literature. By embracing
+        a well-rounded set of interests, including my love for reading,
+        fostering human connections, and advocating for positive change, I bring
+        a diverse perspective and a deep understanding to my work. I'm thrilled
+        to collaborate on impactful projects that utilize technology to make a
+        tangible difference in people's lives.
+      </span>
       <br />
       <br />
       Let's join forces and create something truly amazing together!
     </p>
   </div>
   <div class="grid items-start justify-start pt-medium md:grid-cols-2">
-    <div class="flex h-full w-full items-start justify-start">
+    <div
+      class="flex h-full w-full items-start justify-start"
+      v-motion-pop-visible
+      :delay="500"
+      :duration="1000"
+    >
       <img
         src="../assets/icons/programming-animate.svg"
         alt=""
@@ -35,6 +51,9 @@
       <button
         v-for="(skill, index) in skills"
         :key="index"
+        v-motion-fade-visible
+        :delay="250 + 100 * index"
+        :duration="1000"
         class="flex w-[8rem] flex-col items-center justify-center gap-thin rounded-lg bg-dark-800 p-thin md:w-[10rem]"
       >
         <component
@@ -55,7 +74,7 @@ import {
   DeHtml5Original,
   DeCss3Original,
   DeJavascriptOriginal,
-  DeTailwindcssPlain,
+  DeTailwindcssOriginal,
   DeVuejsOriginal,
   DeReactOriginal,
   DeSassOriginal,
@@ -75,7 +94,12 @@ import {
   DeGitOriginal,
   DeGitlabOriginal,
   DeVscodeOriginal,
+  VsFileTypeQuasar,
+  DeIonicOriginal,
 } from '@kalimahapps/vue-icons';
+
+// import { DeSanityOriginal } from '@kalimahapps/vue-icons';
+
 import PiniaIcon from './icons/PiniaIcon.vue';
 
 import SectionTitle from './reusables/SectionTitle.vue';
@@ -86,11 +110,9 @@ import gsap from 'gsap';
 //   gsap.from(el, {
 //     y: -100,
 //   });
+
 const skills = shallowRef([
-  {
-    skill: 'Typescript',
-    icon: DeTypescriptOriginal,
-  },
+  { skill: 'Typescript', icon: DeTypescriptOriginal },
   {
     skill: 'Javascript',
     icon: DeJavascriptOriginal,
@@ -103,10 +125,18 @@ const skills = shallowRef([
     skill: 'Nuxt',
     icon: DeNuxtjsOriginal,
   },
+  {
+    skill: 'Quasar',
+    icon: VsFileTypeQuasar,
+  },
+  {
+    skill: 'Ionic',
+    icon: DeIonicOriginal,
+  },
 
   {
     skill: 'TailWind',
-    icon: DeTailwindcssPlain,
+    icon: DeTailwindcssOriginal,
   },
   {
     skill: 'Node JS',
@@ -123,6 +153,9 @@ const skills = shallowRef([
 
     icon: CoBrandSocketIo,
   },
+  // { skill: 'Sanity(CMS)',
+  //   icon: DeSanityOriginal ,
+  // },
   {
     skill: 'Mongo Db',
 
@@ -144,14 +177,14 @@ const skills = shallowRef([
     skill: 'Vuetify',
     icon: DeVuetifyOriginal,
   },
-  // {
-  //   skill: 'PHP',
-  //   icon: DePhpOriginal,
-  // },
-  // {
-  //   skill: 'Laravel',
-  //   icon: SiLaravel,
-  // },
+  {
+    skill: 'PHP',
+    icon: DePhpOriginal,
+  },
+  {
+    skill: 'Laravel',
+    icon: SiLaravel,
+  },
   {
     skill: 'Pinia',
     icon: PiniaIcon,
@@ -179,20 +212,20 @@ const skills = shallowRef([
     skill: 'Git',
     icon: DeGitOriginal,
   },
-  {
-    skill: 'Github',
+  // {
+  //   skill: 'Github',
 
-    icon: AkGithubFill,
-  },
+  //   icon: AkGithubFill,
+  // },
   {
     skill: 'Gitlab',
 
     icon: DeGitlabOriginal,
   },
-  // {
-  //   skill: 'VS code',
-  //   icon: DeVscodeOriginal,
-  // },
+  {
+    skill: 'VS code',
+    icon: DeVscodeOriginal,
+  },
 ]);
 </script>
 

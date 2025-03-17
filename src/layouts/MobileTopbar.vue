@@ -20,7 +20,7 @@
           class="mb-[4rem] flex h-[9.6rem] w-full items-center justify-between"
         >
           <LogoPlain class="block" />
-          <IcCancel
+          <AnOutlinedClose
             class="h-[5rem] w-[5rem] text-brand duration-500"
             @click="showModal = false"
           />
@@ -34,6 +34,9 @@
             v-for="(route, index) in NavActions"
             :href="route.route"
             :key="index"
+            v-motion-fade-visible
+            :delay="500"
+            :duration="2000"
           >
             {{ route.title }}
           </a>
@@ -45,6 +48,9 @@
             v-for="(link, index) in socialMediaLinks"
             :key="index"
             target="_blank"
+            v-motion-roll-visible-right
+            :delay="500"
+            :duration="2000"
           >
             <component :is="link.icon" class="text-medium-lite"></component>
           </a>
@@ -56,8 +62,9 @@
 
 <script setup lang="ts">
 import LogoPlain from '@/components/icons/LogoIcon.vue';
-import { CgMenuRight, IcCancel } from '@kalimahapps/vue-icons';
 import {
+  CgMenuRight,
+  AnOutlinedClose,
   AkTwitterFill,
   AkGithubFill,
   AkLinkedInFill,

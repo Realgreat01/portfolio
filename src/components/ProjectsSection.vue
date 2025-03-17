@@ -6,6 +6,9 @@
         class="flex min-h-[30rem] w-full cursor-pointer flex-col rounded-lg bg-dark-800 p-small shadow-sm shadow-dark-700 hover:scale-[1.025] hover:bg-zinc-900"
         v-for="(project, index) in projects"
         :key="index"
+        v-motion-fade-visible
+        :delay="250 + 100 * index"
+        :duration="2000"
       >
         <div class="flex w-full items-center justify-between text-medium-lite">
           <BsBoxes class="text-brand" />
@@ -65,6 +68,32 @@ interface ProjectInterface {
 }
 const projects = ref<ProjectInterface[]>([
   {
+    name: 'QuickHire',
+    website: 'https://quickhire.vercel.app',
+    github: 'https://github.com/Realgreat01/resume-builder-backend',
+    description:
+      'I built a full-stack application that empowers developers to effortlessly create portfolios and apply for jobs with a single click. It streamlines the process by providing a user-friendly interface for showcasing skills, projects, and achievements, while simplifying job search and application.',
+    tools: [
+      'NodeJS',
+      'Express',
+      'MongoDB',
+      'JavaScript',
+      'Vue',
+      'TailwindCSS',
+      'Pinia',
+      'Swagger',
+    ],
+    is_public: true,
+  },
+  {
+    name: 'Didiya',
+    website: 'https://mydidiya.com/',
+    description:
+      'Didiya connects Quick Service Restaurants (QSRs), agro food producers, and grocery stores with consumers looking to buy unsold food at discounted prices',
+    tools: ['TypeScript', 'NuxtJS', 'TailwindCSS', 'Pinia'],
+    is_public: false,
+  },
+  {
     name: 'Syntrix',
     website: 'https://staging-buzz-chat.vercel.app',
     github: 'https://github.com/Realgreat01/chat-application-frontend',
@@ -83,32 +112,15 @@ const projects = ref<ProjectInterface[]>([
     ],
     is_public: true,
   },
+
   {
-    name: 'QuickHire',
-    website: 'https://quickhire.vercel.app',
-    github: 'https://github.com/Realgreat01/resume-builder-backend',
+    name: 'Divest',
+    website: 'https://divest-landing-page.vercel.app',
     description:
-      'I built a full-stack application that empowers developers to effortlessly create portfolios and apply for jobs with a single click. It streamlines the process by providing a user-friendly interface for showcasing skills, projects, and achievements, while simplifying job search and application.',
-    tools: [
-      'NodeJS',
-      'Express',
-      'MongoDB',
-      'JavaScript',
-      'Vue',
-      'TailwindCSS',
-      'Pinia',
-      'Swagger',
-    ],
-    is_public: true,
+      'I built the landing page for Divest, a cryptocurrency conversion company based in Nigeria. The company assists you in effortlessly converting your cryptocurrencies into fiat currency and instantly crediting it to any bank account of your choice.',
+    tools: ['Vue', 'Typescript', 'TailwindCSS'],
+    is_public: false,
   },
-  // {
-  //   name: 'Divest',
-  //   website: 'https://www.usedivest.com',
-  //   description:
-  //     'I built the landing page for Divest, a cryptocurrency conversion company based in Nigeria. The company assists you in effortlessly converting your cryptocurrencies into fiat currency and instantly crediting it to any bank account of your choice.',
-  //   tools: ['Vue', 'Typescript', 'TailwindCSS'],
-  //   is_public: false,
-  // },
   {
     name: 'My Portfolio',
     website: 'https://realgreat.vercel.app',
@@ -136,7 +148,7 @@ const projects = ref<ProjectInterface[]>([
   // },
   {
     name: 'Swifia',
-    website: 'https://www.swifia.com',
+    website: 'https://swifia-app.vercel.app/',
     description:
       'I spearheaded the development of the frontend for the web application, taking charge of designing the architecture, establishing development patterns, and leading the team. Additionally, I successfully completed significant integrations, ensuring seamless functionality and an exceptional user experience.',
     tools: [
@@ -149,15 +161,15 @@ const projects = ref<ProjectInterface[]>([
     ],
     is_public: false,
   },
-  {
-    name: 'Crypto Dashboard',
-    website: 'https://verix-exchange.vercel.app',
-    github: 'https://github.com/Realgreat01/crypto-dashboard',
-    description:
-      'I created a sleek dashboard for a cryptocurrency exchange based on a captivating design from Figma. It offers a user-friendly interface for monitoring assets and making trades',
-    tools: ['Vue', 'Javascript', 'TailwindCSS', 'Chart JS'],
-    is_public: true,
-  },
+  // {
+  //   name: 'Crypto Dashboard',
+  //   website: 'https://verix-exchange.vercel.app',
+  //   github: 'https://github.com/Realgreat01/crypto-dashboard',
+  //   description:
+  //     'I created a sleek dashboard for a cryptocurrency exchange based on a captivating design from Figma. It offers a user-friendly interface for monitoring assets and making trades',
+  //   tools: ['Vue', 'Javascript', 'TailwindCSS', 'Chart JS'],
+  //   is_public: true,
+  // },
   {
     name: 'Verix Shop',
     website: 'https://verix-shop.vercel.app',

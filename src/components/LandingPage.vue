@@ -1,5 +1,11 @@
 <template>
-  <div class="flex h-screen flex-col justify-center" id="home">
+  <div
+    class="flex h-screen flex-col justify-center"
+    id="home"
+    v-motion-fade-visible
+    :delay="500"
+    :duration="2000"
+  >
     <h1 class="">
       <span class="text-small text-brand-100">Hi, I'm</span>
       <span class="block text-medium font-bold text-brand-300 md:text-[7rem]">
@@ -19,7 +25,7 @@
 
     <div class="grid grid-cols-2 gap-x-thin text-small-lite md:w-1/2">
       <a
-        href="/SAMSON_IKUOMENISAN____DEVELOPER_CV.pdf"
+        href="https://docs.google.com/document/d/1z3uvFi0vpAvjmE5xLonME9oJE3Z0azmApXrixaR31PM/edit?usp=sharing"
         download="samson ikuomenisan resume"
         class="h-medium rounded-md bg-brand-700 text-brand-50 hover:bg-brand-100 hover:text-dark-900"
       >

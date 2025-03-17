@@ -5,6 +5,9 @@
       class="grid grid-cols-[1px,9fr] items-center gap-x-small md:gap-x-medium"
       v-for="(experience, index) in experiences"
       :key="index"
+      v-motion-fade-visible
+      :delay="250 + 100 * index"
+      :duration="2000"
     >
       <div
         class="relative flex h-full w-[1px] items-center justify-center bg-brand-400"
@@ -54,32 +57,40 @@ import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import SectionTitle from './reusables/SectionTitle.vue';
 const experiences = ref([
   {
-    company: ['Farm Monitor Limited'],
-    type: 'Contract',
+    company: ['Greep Technologies'],
+    type: 'Fulltime',
     role: 'Frontend Developer',
-    duration: 'August 2023 - Present',
+    duration: 'June 2024 - February 2025',
+    description:
+      'Greep is an innovative online and onsite marketplace designed to connect businesses and customers. Our platform off ers a wide range of products and services, including African food items, hair products, logistics solutions, and more. Greep also empowers businesses with delivery and subscription-based solutions to help them grow.',
+  },
+  {
+    company: ['FarmMonitor Africa Technologies'],
+    type: 'Fulltime',
+    role: 'Frontend Developer',
+    duration: 'August 2023 - May 2024',
     description:
       'Farm Monitor is a remote agro project management and monitoring platform built for Africa. It keeps track of the performance and productivity of farms, ensuring that farm owners, financiers and stakeholders have real-time visibility into their project.',
   },
+  // {
+  //   company: ['Home4IM Incorporated'],
+  //   type: 'Freelance',
+  //   role: 'NodeJs Developer',
+  //   duration: 'June 2023 - August 2023',
+  //   description:
+  //     'A world-class communication platform, specifically targeted at new migrants, designed to facilitate easy access and promote adaptability in new environments. The company is dedicated to providing a seamless and intuitive user experience, allowing users to connect, communicate, and navigate their new surroundings effortlessly.',
+  // },
   {
-    company: ['Home4IM Incorporated'],
-    type: 'Freelance',
-    role: 'NodeJs Developer',
-    duration: 'June 2023 - August 2023',
-    description:
-      'A world-class communication platform, specifically targeted at new migrants, designed to facilitate easy access and promote adaptability in new environments. The company is dedicated to providing a seamless and intuitive user experience, allowing users to connect, communicate, and navigate their new surroundings effortlessly.',
-  },
-  {
-    company: ['Swifia Technology Limited'],
-    type: 'Freelance',
+    company: ['TellerOne Technologies'],
+    type: 'Contract',
     role: 'Frontend Developer',
-    duration: 'April 2023 - June 2023',
+    duration: 'September 2023 - June 2024',
     description:
-      'Swifia is a financial services company that offers businesses and individuals access to global banking services, including virtual accounts in multiple currencies, global transfer services, and forex services.',
+      'TellerOne is a global financial technology that offers borderless financial transactions. It is  licensed by the Central Bank of Nigerian and incorporated by the Cabinent Government Delaware, United States.',
   },
   {
     company: ['Convexity Humanitarian Aid Transfer Solution'],
-    type: 'Freelance',
+    type: 'Contract',
     role: 'Frontend Developer',
     duration: 'October 2022 - November 2022',
     description:
