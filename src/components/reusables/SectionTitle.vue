@@ -3,7 +3,7 @@
     class="mb-[3rem] flex items-center"
     v-motion-slide-visible-right
     :delay="500"
-    :duration="1000"
+    :duration="2000"
   >
     <div v-if="hasBothEnds" class="h-5 w-5 rounded-full bg-brand-800"></div>
     <div

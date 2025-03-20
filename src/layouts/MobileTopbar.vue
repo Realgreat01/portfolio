@@ -34,14 +34,16 @@
             v-for="(route, index) in NavActions"
             :href="route.route"
             :key="index"
-            v-motion-fade-visible
-            :delay="500"
+            v-motion-slide-visible-left
+            :delay="500 + 500 * index"
             :duration="2000"
           >
             {{ route.title }}
           </a>
         </div>
-        <div class="flex items-center justify-center gap-medium md:flex-col">
+        <div
+          class="ml-small flex w-[80%] items-center justify-center gap-small md:flex-col"
+        >
           <a
             :href="link.link"
             class="flex h-medium w-medium items-center justify-center rounded-full text-brand hover:bg-brand-50 hover:text-brand-900"
@@ -63,15 +65,14 @@
 <script setup lang="ts">
 import LogoPlain from '@/components/icons/LogoIcon.vue';
 import {
-  CgMenuRight,
-  AnOutlinedClose,
-  AkTwitterFill,
   AkGithubFill,
-  AkLinkedInFill,
   AkInstagramFill,
+  AkLinkedInFill,
+  AnOutlinedClose,
+  CgMenuRight,
 } from '@kalimahapps/vue-icons';
+import { ref, shallowRef, watchEffect } from 'vue';
 import XIcon from '../components/icons/XIcon.vue';
-import { shallowRef, ref, watchEffect } from 'vue';
 
 const showModal = ref(false);
 const NavActions = ref([
