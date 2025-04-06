@@ -51,12 +51,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import {
   BsBoxes,
   FeExternalLink,
   PhFillGithubLogo,
 } from '@kalimahapps/vue-icons';
+import { ref } from 'vue';
 import SectionTitle from './reusables/SectionTitle.vue';
 interface ProjectInterface {
   name: string;
@@ -84,6 +84,22 @@ const projects = ref<ProjectInterface[]>([
       'Swagger',
     ],
     is_public: true,
+  },
+  {
+    name: 'Henderson & Henderix',
+    website: 'https://www.hendersonandhenderix.com/',
+    description:
+      'HnHH is a real-estate platform like Airbnb for the Nigerian ecosystem, enabling users to book and manage short-term accommodations easily with a real-time booking syste. Built using Quasar and Capacitor, the app functions seamlessly as a web and mobile applicatio ensuring an optimised user experience across devices.',
+    tools: [
+      'TypeScript',
+      'VueJs',
+      'Quasar',
+      'Capacitor',
+      'TailwindCSS',
+      'SCSS',
+      'Pinia',
+    ],
+    is_public: false,
   },
   {
     name: 'Didiya',
