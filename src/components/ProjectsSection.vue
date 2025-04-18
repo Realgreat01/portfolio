@@ -89,7 +89,7 @@ const projects = ref<ProjectInterface[]>([
     name: 'Henderson & Henderix',
     website: 'https://www.hendersonandhenderix.com/',
     description:
-      'HnHH is a real-estate platform like Airbnb for the Nigerian ecosystem, enabling users to book and manage short-term accommodations easily with a real-time booking syste. Built using Quasar and Capacitor, the app functions seamlessly as a web and mobile applicatio ensuring an optimised user experience across devices.',
+      'HnHH is a real-estate platform like Airbnb for the Nigerian ecosystem, enabling users to book and manage short-term accommodations easily with a real-time booking system. Built using Quasar and Capacitor, the app functions seamlessly as a web and mobile application ensuring an optimised user experience across devices.',
     tools: [
       'TypeScript',
       'VueJs',
@@ -107,6 +107,14 @@ const projects = ref<ProjectInterface[]>([
     description:
       'Didiya connects Quick Service Restaurants (QSRs), agro food producers, and grocery stores with consumers looking to buy unsold food at discounted prices',
     tools: ['TypeScript', 'NuxtJS', 'TailwindCSS', 'Pinia'],
+    is_public: false,
+  },
+  {
+    name: 'Social Deals',
+    website: 'https://social-deals-sable.vercel.app/',
+    description:
+      'The platform acts as a bridge between deal providers (retailers, merchants, manufacturers) and consumers, with social media influencers and communities (Amplifiers) playing a crucial role in deal distribution.',
+    tools: ['TypeScript', 'NuxtJS', 'TailwindCSS'],
     is_public: false,
   },
   {
