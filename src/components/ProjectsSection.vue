@@ -70,7 +70,7 @@ const projects = ref<ProjectInterface[]>([
   {
     name: 'QuickHire',
     website: 'https://quickhire.vercel.app',
-    github: 'https://github.com/Realgreat01/resume-builder-backend',
+    github: 'https://github.com/Realgreat01/quickhire-frontend',
     description:
       'I built a full-stack application that empowers developers to effortlessly create portfolios and apply for jobs with a single click. It streamlines the process by providing a user-friendly interface for showcasing skills, projects, and achievements, while simplifying job search and application.',
     tools: [

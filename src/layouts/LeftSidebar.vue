@@ -22,13 +22,12 @@
 
 <script setup lang="ts">
 import {
-  AkTwitterFill,
   AkGithubFill,
-  AkLinkedInFill,
   AkInstagramFill,
+  AkLinkedInFill,
 } from '@kalimahapps/vue-icons';
-import XIcon from '../components/icons/XIcon.vue';
 import { shallowRef } from 'vue';
+import XIcon from '../components/icons/XIcon.vue';
 
 const socialMediaLinks = shallowRef([
   {
@@ -41,7 +40,7 @@ const socialMediaLinks = shallowRef([
   },
   {
     icon: AkLinkedInFill,
-    link: 'https://www.linkedin.com/in/samsonrealgreat/',
+    link: 'https://www.linkedin.com/in/samsonikuomenisan',
   },
   {
     icon: AkInstagramFill,
