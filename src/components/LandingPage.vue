@@ -3,8 +3,8 @@
     class="flex h-screen flex-col justify-center"
     id="home"
     v-motion-fade-visible
-    :delay="500"
-    :duration="2000"
+    :delay="100"
+    :duration="1000"
   >
     <h1 class="">
       <span class="text-small text-brand-100">Hi, I'm</span>
@@ -15,10 +15,10 @@
     <h2
       class="-mt-thin bg-gradient-to-r from-brand-600 to-brand-900 bg-clip-text text-small font-black text-transparent"
     >
-      Fullstack Developer
+      Software Developer
     </h2>
     <p class="my-medium font-thin md:w-4/5">
-      As a skilled software engineer, I specialize in building frontend and
+      As a skilled software developer, I specialize in building frontend and
       backend applications. With a strong commitment to excellence, I prioritize
       speed, accessibility, and responsiveness in the applications I deliver.
     </p>

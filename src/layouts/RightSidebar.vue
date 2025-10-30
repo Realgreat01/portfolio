@@ -6,7 +6,7 @@
       :href="`#${route.route}`"
       :key="index"
       v-motion-fade-visible
-      :delay="1000 + 100 * index"
+      :delay="500 + 100 * index"
       :duration="1000"
       style="transform: rotate(90deg)"
       :class="

@@ -6,8 +6,8 @@
       v-for="(experience, index) in experiences"
       :key="index"
       v-motion-fade-visible
-      :delay="250 + 100 * index"
-      :duration="2000"
+      :delay="2 + 50 * index"
+      :duration="500"
     >
       <div
         class="relative flex h-full w-[1px] items-center justify-center bg-brand-400"
@@ -53,7 +53,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
 import SectionTitle from './reusables/SectionTitle.vue';
 const experiences = ref([
   {

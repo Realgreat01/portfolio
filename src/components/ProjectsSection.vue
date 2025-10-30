@@ -7,8 +7,8 @@
         v-for="(project, index) in projects"
         :key="index"
         v-motion-fade-visible
-        :delay="250 + 100 * index"
-        :duration="2000"
+        :delay="2 + 50 * index"
+        :duration="500"
       >
         <div class="flex w-full items-center justify-between text-medium-lite">
           <BsBoxes class="text-brand" />

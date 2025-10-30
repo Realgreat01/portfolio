@@ -3,8 +3,8 @@
     class="flex flex-col md:mt-[10rem]"
     id="about"
     v-motion-fade-visible
-    :delay="500"
-    :duration="1500"
+    :delay="100"
+    :duration="1000"
   >
     <SectionTitle>About</SectionTitle>
     <p class="w-full text-normal font-light md:w-11/12">
@@ -38,7 +38,7 @@
     <div
       class="flex h-full w-full items-start justify-start"
       v-motion-pop-visible
-      :delay="500"
+      :delay="100"
       :duration="1000"
     >
       <img
@@ -52,8 +52,8 @@
         v-for="(skill, index) in skills"
         :key="index"
         v-motion-fade-visible
-        :delay="250 + 100 * index"
-        :duration="1000"
+        :delay="2 + 50 * index"
+        :duration="500"
         class="flex w-[8rem] flex-col items-center justify-center gap-thin rounded-lg bg-dark-800 p-thin md:w-[10rem]"
       >
         <component
@@ -69,41 +69,38 @@
 </template>
 
 <script setup lang="ts">
-import { shallowRef, ref } from 'vue';
 import {
-  DeHtml5Original,
-  DeCss3Original,
-  DeJavascriptOriginal,
-  DeTailwindcssOriginal,
-  DeVuejsOriginal,
-  DeReactOriginal,
-  DeSassOriginal,
-  DeNuxtjsOriginal,
-  DeTypescriptOriginal,
-  DeNodejsOriginal,
-  SiExpress,
-  DeMongodbOriginal,
   CoBrandSocketIo,
-  VsFileTypeFirebase,
-  DeXdPlain,
-  DePhpOriginal,
-  SiLaravel,
+  DeCss3Original,
   DeFigmaOriginal,
-  DeVuetifyOriginal,
-  AkGithubFill,
   DeGitOriginal,
   DeGitlabOriginal,
-  DeVscodeOriginal,
-  VsFileTypeQuasar,
+  DeHtml5Original,
   DeIonicOriginal,
+  DeJavascriptOriginal,
+  DeMongodbOriginal,
+  DeNodejsOriginal,
+  DeNuxtjsOriginal,
+  DePhpOriginal,
+  DeReactOriginal,
+  DeSassOriginal,
+  DeTailwindcssOriginal,
+  DeTypescriptOriginal,
+  DeVscodeOriginal,
+  DeVuejsOriginal,
+  DeVuetifyOriginal,
+  SiExpress,
+  SiLaravel,
+  VsFileTypeFirebase,
+  VsFileTypeQuasar,
 } from '@kalimahapps/vue-icons';
+import { shallowRef } from 'vue';
 
 // import { DeSanityOriginal } from '@kalimahapps/vue-icons';
 
 import PiniaIcon from './icons/PiniaIcon.vue';
 
 import SectionTitle from './reusables/SectionTitle.vue';
-import gsap from 'gsap';
 
 // const skillIcons = ref([])
 // const stagger = (el: HTMLElement) =>

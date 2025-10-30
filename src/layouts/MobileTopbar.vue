@@ -35,8 +35,8 @@
             :href="route.route"
             :key="index"
             v-motion-slide-visible-left
-            :delay="500 + 500 * index"
-            :duration="2000"
+            :delay="2 + 50 * index"
+            :duration="500"
           >
             {{ route.title }}
           </a>
@@ -51,8 +51,8 @@
             :key="index"
             target="_blank"
             v-motion-roll-visible-right
-            :delay="500"
-            :duration="2000"
+            :delay="100"
+            :duration="1000"
           >
             <component :is="link.icon" class="text-medium-lite"></component>
           </a>
@@ -92,7 +92,7 @@ const socialMediaLinks = shallowRef([
   },
   {
     icon: AkLinkedInFill,
-    link: 'https://www.linkedin.com/in/samsonrealgreat/',
+    link: 'https://www.linkedin.com/in/samsonikuomenisan',
   },
   {
     icon: AkInstagramFill,

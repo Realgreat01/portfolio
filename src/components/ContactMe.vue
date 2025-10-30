@@ -9,24 +9,24 @@
     <h1
       class="text-medium-lite font-bold text-brand"
       v-motion-fade-visible
-      :delay="500"
-      :duration="2000"
+      :delay="100"
+      :duration="1000"
     >
       Let's Connect !
     </h1>
     <p
       class="w-4/5 text-center text-dark-200"
       v-motion-fade-visible
-      :delay="500"
-      :duration="2000"
+      :delay="100"
+      :duration="1000"
     >
       Let's connect and collaborate on your next project for a successful
       partnership!
     </p>
     <div
       v-motion-fade-visible
-      :delay="500"
-      :duration="2000"
+      :delay="100"
+      :duration="1000"
       class="h-medium w-[15rem] rounded-md bg-brand-800 text-small text-brand-50 hover:bg-brand-200 hover:text-brand-900"
       @click="SendMail"
     >
@@ -39,8 +39,8 @@
         v-for="(contact, index) in contactInformation"
         :key="index"
         v-motion-fade-visible
-        :delay="500 + 50 * index"
-        :duration="2000"
+        :delay="2 + 50 * index"
+        :duration="500"
       >
         <component
           :is="contact.icon"
@@ -59,8 +59,8 @@
 
 <script setup lang="ts">
 import ButtonComponent from '@/components/reusables/ButtonComponent.vue';
+import { BsPhone, FlMail, ReWhatsappFill } from '@kalimahapps/vue-icons';
 import { shallowRef } from 'vue';
-import { FlMail, ReWhatsappFill, BsPhone } from '@kalimahapps/vue-icons';
 import SectionTitle from './reusables/SectionTitle.vue';
 
 const SendMail = () =>

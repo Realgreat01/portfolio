@@ -11,7 +11,7 @@
         :key="index"
         target="_blank"
         v-motion-roll-visible-once-top
-        :delay="1000 + 100 * index"
+        :delay="500 + 100 * index"
         :duration="1000"
       >
         <component :is="link.icon" class="text-medium-lite"></component>
@@ -36,7 +36,7 @@ const socialMediaLinks = shallowRef([
   },
   {
     icon: XIcon,
-    link: 'https://x.com/SRealgreat',
+    link: 'https://x.com/DrCodes_',
   },
   {
     icon: AkLinkedInFill,
