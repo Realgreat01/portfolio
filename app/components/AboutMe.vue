@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex flex-col md:mt-40"
-    v-motion-fade-visible
+    vue-test-motion-fade-visible
     id="about"
     :delay="100"
     :duration="1000"
@@ -33,7 +33,7 @@
   <div class="items-start lg:grid justify-start pt-medium lg:grid-cols-2">
     <div
       class="flex h-full w-full items-start justify-start"
-      v-motion-pop-visible
+      vue-test-motion-pop-visible
       :delay="100"
       :duration="1000"
     >
@@ -49,7 +49,7 @@
       <button
         v-for="(skill, index) in skills"
         :key="index"
-        v-motion-fade-visible
+        vue-test-motion-fade-visible
         :delay="2 + 50 * index"
         :duration="500"
         class="flex flex-col items-center justify-center gap-thin rounded-lg bg-dark-800 p-thin w-full h-full"

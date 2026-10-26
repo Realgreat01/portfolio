@@ -1,7 +1,7 @@
 <template>
   <div
     class="border border-none border-r-brand-50 bg-dark-900"
-    v-motion-slide-in-right
+    vue-test-motion-slide-in-right
   >
     <div class="flex h-full items-center justify-center gap-medium md:flex-col">
       <a
@@ -10,7 +10,7 @@
         v-for="(link, index) in socialMediaLinks"
         :key="index"
         target="_blank"
-        v-motion-roll-visible-once-top
+        vue-test-motion-roll-visible-once-top
         :delay="500 + 100 * index"
         :duration="1000"
       >

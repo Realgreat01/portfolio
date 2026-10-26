@@ -3,12 +3,12 @@
     id="contact"
     class="my-10 lg:mt-40 flex flex-col items-center gap-small text-center"
   >
-    <SectionTitle :has-both-ends="true" v-motion-slide-visible-bottom>
+    <SectionTitle :has-both-ends="true" vue-test-motion-slide-visible-bottom>
       Contact&nbsp;Me
     </SectionTitle>
     <h1
       class="text-medium-lite font-bold text-brand"
-      v-motion-fade-visible
+      vue-test-motion-fade-visible
       :delay="100"
       :duration="1000"
     >
@@ -16,7 +16,7 @@
     </h1>
     <p
       class="w-4/5 text-center text-dark-200"
-      v-motion-fade-visible
+      vue-test-motion-fade-visible
       :delay="100"
       :duration="1000"
     >
@@ -24,7 +24,7 @@
       partnership!
     </p>
     <div
-      v-motion-fade-visible
+      vue-test-motion-fade-visible
       :delay="100"
       :duration="1000"
       class="h-medium w-[15rem] rounded-md bg-brand-800 text-small text-brand-50 hover:bg-brand-200 hover:text-brand-900"
@@ -38,7 +38,7 @@
         class="flex items-center gap-x-2"
         v-for="(contact, index) in contactInformation"
         :key="index"
-        v-motion-fade-visible
+        vue-test-motion-fade-visible
         :delay="2 + 50 * index"
         :duration="500"
       >

@@ -5,7 +5,7 @@
       class="grid grid-cols-[1px_9fr] items-center gap-x-small md:gap-x-medium"
       v-for="(experience, index) in experiences"
       :key="index"
-      v-motion-fade-visible
+      vue-test-motion-fade-visible
       :delay="2 + 50 * index"
       :duration="500"
     >

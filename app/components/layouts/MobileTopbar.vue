@@ -34,7 +34,7 @@
             v-for="(route, index) in NavActions"
             :href="route.route"
             :key="index"
-            v-motion-slide-visible-left
+            vue-test-motion-slide-visible-left
             :delay="2 + 50 * index"
             :duration="500"
           >
@@ -50,7 +50,7 @@
             v-for="(link, index) in socialMediaLinks"
             :key="index"
             target="_blank"
-            v-motion-roll-visible-right
+            vue-test-motion-roll-visible-right
             :delay="100"
             :duration="1000"
           >

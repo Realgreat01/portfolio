@@ -5,7 +5,7 @@
       v-for="(route, index) in NavActions"
       :href="`#${route.route}`"
       :key="index"
-      v-motion-fade-visible
+      vue-test-motion-fade-visible
       :delay="500 + 100 * index"
       :duration="1000"
       style="transform: rotate(90deg)"

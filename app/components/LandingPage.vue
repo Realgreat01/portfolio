@@ -2,7 +2,7 @@
   <div
     class="flex h-screen flex-col justify-center"
     id="home"
-    v-motion-fade-visible
+    vue-test-motion-fade-visible
     :delay="100"
     :duration="1000"
   >

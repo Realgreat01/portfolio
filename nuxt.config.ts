@@ -104,6 +104,25 @@ export default defineNuxtConfig({
   //   id: "G-XXXXXXXXXX",
   // },
 
+  vue: {
+    compilerOptions: {
+      directiveTransforms: {
+        motion: () => ({ props: [], needRuntime: true }),
+
+        "motion--fade-visible": () => ({ props: [], needRuntime: true }),
+        "motion--pop-visible": () => ({ props: [], needRuntime: true }),
+        "motion--slide-in-right": () => ({ props: [], needRuntime: true }),
+        "motion--roll-visible-once-top": () => ({
+          props: [],
+          needRuntime: true,
+        }),
+        "motion--slide-visible-left": () => ({ props: [], needRuntime: true }),
+        "motion--roll-visible-right": () => ({ props: [], needRuntime: true }),
+        "motion--slide-visible-right": () => ({ props: [], needRuntime: true }),
+      },
+    },
+  },
+
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/styles/main.css"],

@@ -6,7 +6,7 @@
         class="flex min-h-[30rem] w-full cursor-pointer flex-col rounded-lg bg-dark-800 p-small shadow-sm shadow-dark-700 hover:scale-[1.025] hover:bg-zinc-900"
         v-for="(project, index) in projects"
         :key="index"
-        v-motion-fade-visible
+        vue-test-motion-fade-visible
         :delay="2 + 50 * index"
         :duration="500"
       >

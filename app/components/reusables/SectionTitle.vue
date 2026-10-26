@@ -1,6 +1,6 @@
 <template>
   <div
-    v-motion-slide-visible-right
+    vue-test-motion-slide-visible-right
     class="mb-[3rem] flex items-center"
     :delay="100"
     :duration="500"
