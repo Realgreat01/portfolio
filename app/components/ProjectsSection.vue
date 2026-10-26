@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[10rem] flex flex-col" id="projects">
+  <div class="mt-40 flex flex-col" id="projects">
     <SectionTitle>Projects</SectionTitle>
     <div class="grid flex-wrap gap-small md:grid-cols-3">
       <div
